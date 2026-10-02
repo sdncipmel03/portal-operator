@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{var t=localStorage.getItem("portalOperatorTema");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<title>Portal Operator SDN Cipinang Melayu 03 Pagi</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--text:#14213d;--muted:#5b6b85;--primary:#1d4ed8;--accent:#f59e0b;--border:#dbe3ef;--hero:linear-gradient(135deg,#1e3a8a,#2563eb);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1424;--card:#16203a;--text:#e8eefc;--muted:#9bacc9;--primary:#6ea0ff;--border:#26335a;--hero:linear-gradient(135deg,#142a66,#1e40af)}}
+:root[data-theme="dark"]{--bg:#0d1424;--card:#16203a;--text:#e8eefc;--muted:#9bacc9;--primary:#6ea0ff;--border:#26335a;--hero:linear-gradient(135deg,#142a66,#1e40af)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+.hero{position:relative;background:var(--hero);background-size:cover;background-position:center;color:#fff;padding:40px 20px 56px;text-align:center}
+.logo{width:88px;height:88px;object-fit:contain;background:#fff;border-radius:50%;padding:6px;margin:0 auto 12px;display:block}.emoji{display:flex;align-items:center;justify-content:center;font-size:44px}.logo[hidden],.emoji[hidden]{display:none}.prev{width:56px;height:56px;object-fit:contain;border:1px solid var(--border);border-radius:50%;background:#fff}
+h3{margin:16px 0 0;font-size:15px}
+.tbtn{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.2);color:#fff;border:none;width:40px;height:40px;border-radius:50%;font-size:18px;padding:0}
+.tg{display:grid;gap:8px;margin:12px 0}
+#splash{position:fixed;inset:0;background:var(--bg);color:var(--text);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;z-index:100;transition:opacity .5s;animation:splashOut .5s 8s forwards}
+#splash.off{opacity:0;pointer-events:none}@keyframes splashOut{to{opacity:0;visibility:hidden;pointer-events:none}}
+.splogo{font-size:56px}
+.pb{width:180px;height:5px;background:var(--border);border-radius:9px;overflow:hidden;margin-top:6px}
+.pb i{display:block;height:100%;width:40%;background:var(--primary);border-radius:9px;animation:pb 1.1s ease-in-out infinite}@keyframes pb{0%{margin-left:-40%}100%{margin-left:100%}}
+.icb{width:56px;height:40px;font-size:22px;padding:0;display:flex;align-items:center;justify-content:center}.icb img,.ic-img{width:32px;height:32px;object-fit:contain;border-radius:6px}.ic .ic-img{width:40px;height:40px}
+.eg{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px;margin:12px 0}.eg button{font-size:22px;padding:6px}
+input[type=color]{width:48px;height:34px;padding:0;border:1px solid var(--border);border-radius:8px;background:none;cursor:pointer;vertical-align:middle}
+.bar label{font-size:14px;display:flex;align-items:center;gap:6px}
+.ld{position:fixed;inset:0;background:rgba(10,20,50,.6);backdrop-filter:blur(3px);display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#fff;z-index:50}.ld.on{display:flex}
+.sp{width:48px;height:48px;border:5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#16a34a;color:#fff;padding:10px 20px;border-radius:99px;z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}#toast.on{opacity:1}
+.hero .badge{display:inline-block;background:rgba(255,255,255,.18);padding:4px 14px;border-radius:99px;font-size:13px;margin-bottom:12px}
+.hero h1{margin:0 0 6px;font-size:clamp(24px,5vw,38px)}
+.hero p{margin:0 auto;max-width:560px;opacity:.9}
+main{max-width:1000px;margin:-32px auto 0;padding:0 16px 32px}
+.search{width:100%;padding:14px 18px;border-radius:14px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:16px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:20px}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.12);border-color:var(--primary)}
+.card .ic{font-size:28px}.card b{font-size:16px}.card span{color:var(--muted);font-size:13px}
+.empty{text-align:center;color:var(--muted);margin-top:30px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:20px 16px 30px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);padding:8px 14px}
+button.p{background:var(--primary);color:#fff;border-color:var(--primary)}
+button.d{color:#dc2626}
+.link{background:none;border:none;color:var(--primary);text-decoration:underline;padding:0}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:flex-start;justify-content:center;padding:20px;overflow:auto;z-index:10}
+.modal.on{display:flex}
+.box{background:var(--card);border-radius:16px;padding:20px;width:100%;max-width:760px;margin:auto}
+.box h2{margin-top:0}
+input[type=text],input[type=password],input[type=url]{width:100%;padding:9px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
+.row{display:grid;grid-template-columns:56px 1fr 1.6fr 1fr auto;gap:8px;margin-bottom:8px;align-items:center}
+.hd{font-size:12px;color:var(--muted)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.note{font-size:13px;color:var(--muted)}
+@media(max-width:640px){.row{grid-template-columns:56px 1fr auto}.row .u,.row .ds{grid-column:1/-1}.hd{display:none}}
+</style>
+</head>
+<body>
+<div id="splash"><div class="splogo" id="splEmoji">🏫</div><img id="splLogo" class="logo" alt="" hidden><h2 style="margin:6px 0 0">Portal Operator</h2><p class="note" style="margin:0">SDN Cipinang Melayu 03 Pagi</p><div class="pb"><i></i></div><p class="note" style="margin:0">Memuat portal…</p></div>
+<header class="hero">
+  <button class="tbtn" id="tBtn" aria-label="Pengaturan tampilan" title="Pengaturan tampilan">⚙️</button>
+  <img class="logo" id="logo" alt="Logo sekolah" hidden><div class="logo emoji" id="logoEmoji">🏫</div>
+  <div class="badge">Portal Operator</div>
+  <h1>SDN Cipinang Melayu 03 Pagi</h1>
+  <p>Satu pintu untuk semua akses layanan, aplikasi, dan arsip digital sekolah.</p>
+</header>
+<main>
+  <input class="search" id="q" type="search" placeholder="Cari akses portal…" aria-label="Cari">
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>Tidak ada akses yang cocok.</p>
+</main>
+<footer>© <span id="yr"></span> SDN Cipinang Melayu 03 Pagi · <button class="link" id="adminBtn">Admin</button></footer>
+
+<div class="modal" id="login"><div class="box" style="max-width:340px">
+  <h2>🔐 Masuk Admin</h2>
+  <input type="text" id="usr" placeholder="Username" autocomplete="username" style="margin-bottom:8px"><input type="password" id="pw" placeholder="Password" autocomplete="current-password">
+  <p class="note" id="loginErr" style="color:#dc2626"></p>
+  <div class="bar"><button class="p" id="loginOk">Masuk</button><button id="loginCancel">Batal</button></div>
+</div></div>
+
+<div class="modal" id="admin"><div class="box">
+  <h2>⚙️ Panel Admin</h2>
+  <div class="row hd"><span>Ikon</span><span>Nama akses</span><span>Link (URL)</span><span>Keterangan</span><span></span></div>
+  <div id="rows"></div>
+  <div class="bar">
+    <button id="add">+ Tambah akses</button>
+    <button class="p" id="save">Simpan</button>
+    <button id="exp">Ekspor</button>
+    <button id="imp">Impor</button>
+    <button id="reset" class="d">Reset awal</button>
+    <button id="close">🚪 Keluar</button>
+  </div>
+  <h3>🖼️ Logo sekolah (tampil di dashboard)</h3>
+  <div class="bar"><img id="logoPrev" class="prev" alt="" hidden><button id="logoPick">Unggah logo</button><button id="logoDel" class="d">Hapus logo</button></div>
+  <input type="file" id="logoFile" accept="image/*" hidden>
+  <h3>🎨 Latar header di belakang logo (warna atau gambar)</h3>
+  <div class="bar"><label>Warna 1 <input type="color" id="bg1" value="#1e3a8a"></label><label>Warna 2 <input type="color" id="bg2" value="#2563eb"></label><button id="bgReset">Reset warna</button></div>
+  <div class="bar"><button id="hImgPick">🖼️ Unggah gambar latar</button><button id="hImgDel" class="d">Hapus gambar</button></div>
+  <input type="file" id="hImgFile" accept="image/*" hidden>
+  <h3>👤 Akun admin</h3>
+  <div class="bar"><input type="text" id="newUsr" placeholder="Username baru" style="max-width:200px"><input type="password" id="newPw" placeholder="Password baru" style="max-width:200px"><button id="accBtn">Ganti akun</button></div>
+  <p class="note">Setelah mengubah apa pun (termasuk logo dan gambar latar), klik Simpan agar tersimpan ke server dan tampil di semua perangkat. Jika mode cloud belum diaktifkan, data hanya tersimpan di browser ini. Login admin ini hanya pengaman sederhana di sisi browser, bukan keamanan penuh.</p>
+  <input type="file" id="file" accept=".json" hidden>
+</div></div>
+
+<div class="modal" id="tema"><div class="box" style="max-width:340px"><h2>⚙️ Pengaturan Tampilan</h2><p class="note">Pilih tema halaman (berlaku di perangkat ini):</p><div class="tg" id="tg"></div><div class="bar"><button id="tClose">Tutup</button></div></div></div>
+<div class="modal" id="picker"><div class="box" style="max-width:420px"><h2>Pilih ikon</h2><div class="eg" id="eg"></div><div class="bar"><button id="icUp">📤 Unggah ikon sendiri</button><button id="icClose">Batal</button></div><input type="file" id="icFile" accept="image/*" hidden></div></div>
+<div class="ld" id="ld"><div class="sp"></div><p id="ldt">Memuat…</p></div><div id="toast"></div>
+<script>
+const API_URL="https://script.google.com/macros/s/AKfycbwuibHHAPZvzKhEOHTMEo61bhSQMxsSuls8vCkLA9gqSlwVeIpD6uF4Z0VT-PMUATan/exec"; // Tempel URL Web App Google Apps Script di sini (lihat panduan)
+const KEY="portalOperatorSDN", PKEY="portalOperatorPIN";
+const DEFAULTS=[
+ {i:"📚",n:"Dapodik",u:"https://dapo.kemendikdasmen.go.id",d:"Data pokok pendidikan"},
+ {i:"🧑‍🏫",n:"Info GTK",u:"https://info.gtk.kemendikdasmen.go.id",d:"Data guru & tenaga kependidikan"},
+ {i:"✅",n:"Verval PD",u:"https://vervalpd.data.kemendikdasmen.go.id",d:"Verifikasi data peserta didik"},
+ {i:"💰",n:"ARKAS",u:"https://arkas.kemendikdasmen.go.id",d:"Anggaran & BOS sekolah"},
+ {i:"🗂️",n:"Arsip Digital",u:"https://drive.google.com",d:"Folder arsip di Google Drive"},
+ {i:"📊",n:"Spreadsheet Sekolah",u:"https://sheets.google.com",d:"Rekap data & laporan"}
+];
+let items=load(), admin=false;
+function load(){try{const s=localStorage.getItem(KEY);if(s)return JSON.parse(s)}catch(e){}return JSON.parse(JSON.stringify(DEFAULTS))}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){}}
+const AKEY="portalOperatorAkun",LKEY="portalOperatorLogo";
+async function sha(s){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function getAcc(){try{const s=localStorage.getItem(AKEY);if(s)return JSON.parse(s)}catch(e){}return null}
+const BKEY="portalOperatorBg",BDEF={a:"#1e3a8a",b:"#2563eb"};let bgDirty=false;
+function loadBg(){try{const s=localStorage.getItem(BKEY);if(s)return JSON.parse(s)}catch(e){}return null}
+const IKEY="portalOperatorBgImg";function loadImg(){try{return localStorage.getItem(IKEY)}catch(e){return null}}
+let bgImg=loadImg();let bg=loadBg();
+function applyBg(c){const r=document.documentElement.style;if(bgImg)r.setProperty("--hero","linear-gradient(rgba(10,20,50,.45),rgba(10,20,50,.45)),url('"+bgImg+"')");else if(c)r.setProperty("--hero","linear-gradient(135deg,"+c.a+","+c.b+")");else r.removeProperty("--hero")}
+function syncBg(){const c=bg||BDEF;$("bg1").value=c.a;$("bg2").value=c.b}
+function busy(txt,fn,ms){$("ldt").textContent=txt;$("ld").classList.add("on");return new Promise(res=>setTimeout(async()=>{try{await fn()}finally{$("ld").classList.remove("on")}res()},ms||900))}
+function toast(t){const e=$("toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),2200)}
+let logo=null;try{logo=localStorage.getItem(LKEY)}catch(e){}
+function applyLogo(){const l=$("logo"),e=$("logoEmoji"),v=$("logoPrev");if(logo){l.src=logo;v.src=logo}l.hidden=!logo;e.hidden=!!logo;v.hidden=!logo}
+const $=id=>document.getElementById(id);
+function safeUrl(u){u=(u||"").trim();if(!u)return"#";if(!/^https?:\/\//i.test(u))u="https://"+u;return u}
+function render(){
+  const q=$("q").value.toLowerCase(),g=$("grid");g.innerHTML="";
+  const list=items.filter(x=>(x.n+" "+x.d).toLowerCase().includes(q));
+  list.forEach(x=>{
+    const a=document.createElement("a");a.className="card";a.href=safeUrl(x.u);a.target="_blank";a.rel="noopener noreferrer";
+    const ic=document.createElement("div");ic.className="ic";icon(ic,x.i);
+    const b=document.createElement("b");b.textContent=x.n;
+    const s=document.createElement("span");s.textContent=x.d||"";
+    a.append(ic,b,s);g.appendChild(a);
+  });
+  $("empty").hidden=list.length>0;
+}
+let pk=-1;
+function icon(el,v){el.textContent="";if(v&&v.startsWith("data:image")){const m=document.createElement("img");m.src=v;m.className="ic-img";m.alt="";el.appendChild(m)}else el.textContent=v||"🔗"}
+function rows(){
+  const r=$("rows");r.innerHTML="";
+  items.forEach((x,k)=>{
+    const w=document.createElement("div");w.className="row";
+    const mk=(cls,key,ph)=>{const e=document.createElement("input");e.type="text";e.value=x[key]||"";e.placeholder=ph;if(cls)e.className=cls;e.oninput=()=>{items[k][key]=e.value};return e};
+    const del=document.createElement("button");del.className="d";del.textContent="🗑";del.title="Hapus";del.onclick=()=>{items.splice(k,1);rows()};
+    const ib=document.createElement("button");ib.className="icb";icon(ib,x.i);ib.title="Pilih ikon";ib.onclick=()=>{pk=k;show("picker",true)};w.append(ib,mk("","n","Nama akses"),mk("u","u","https://…"),mk("ds","d","Keterangan"),del);
+    r.appendChild(w);
+  });
+}
+const show=(id,v)=>$(id).classList.toggle("on",v);
+$("yr").textContent=new Date().getFullYear();
+$("q").oninput=render;
+$("adminBtn").onclick=()=>{$("usr").value="";$("pw").value="";$("loginErr").textContent="";show("login",true);$("usr").focus()};
+$("loginCancel").onclick=()=>show("login",false);
+$("loginOk").onclick=()=>{const u=$("usr").value.trim(),p=$("pw").value;busy("Memeriksa akun…",async()=>{let ok=false;if(API_URL){try{ok=(await cloud({action:"ping",u,p})).ok}catch(e){}if(ok)cred={u,p}}else{const a=getAcc(),h=await sha(p);ok=a?(u===a.u&&h===a.h):(u==="admin"&&h===await sha("admin123"))}if(ok){show("login",false);syncBg();rows();show("admin",true);toast("✅ Login berhasil")}else $("loginErr").textContent="Username/password salah, atau server tidak terjangkau."},1000)};
+$("pw").onkeydown=e=>{if(e.key==="Enter")$("loginOk").click()};
+$("add").onclick=()=>{items.push({i:"🔗",n:"",u:"",d:""});rows()};
+$("save").onclick=()=>busy("Menyimpan perubahan…",async()=>{saveErr=false;items=items.filter(x=>x.n.trim());persist();if(bgDirty){bg={a:$("bg1").value,b:$("bg2").value};try{localStorage.setItem(BKEY,JSON.stringify(bg))}catch(e){}try{localStorage.removeItem(IKEY)}catch(e){}bgDirty=false}render();rows();if(API_URL){try{const r=await cloud({action:"save",u:cred.u,p:cred.p,data:{items,logo,bg,bgImg}});if(!r.ok)saveErr=true}catch(e){saveErr=true}}},1000).then(()=>toast(saveErr?"⚠️ Gagal menyimpan ke cloud":"✅ Berhasil disimpan"));
+$("close").onclick=()=>busy("Keluar…",()=>{cred=null;items=load();bg=loadBg();bgImg=loadImg();applyBg(bg);bgDirty=false;render();show("admin",false)},800).then(()=>toast("Anda telah keluar"));
+$("bg1").oninput=$("bg2").oninput=()=>{bgDirty=true;bgImg=null;applyBg({a:$("bg1").value,b:$("bg2").value})};
+const EMOJIS="📚 📖 🗂️ 📁 📊 📈 📝 ✅ 🧑‍🏫 👨‍🎓 🏫 🎓 💰 🧾 📅 📧 📞 🌐 🔗 🔒 🔑 ⚙️ 🖥️ 💻 📱 🖨️ ☁️ 📤 📥 📌 🔔 📢 🏆 ⭐ ❤️ 🧮 🔬 🎨 🎵 ⚽ 🚌 🏥 🍽️ 🛠️ 📷 🗃️".split(" ");
+EMOJIS.forEach(e=>{const b=document.createElement("button");b.textContent=e;b.onclick=()=>{items[pk].i=e;rows();show("picker",false)};$("eg").appendChild(b)});
+$("icClose").onclick=()=>show("picker",false);
+$("icUp").onclick=()=>$("icFile").click();
+$("icFile").onchange=e=>{const f=e.target.files[0];e.target.value="";if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,96/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);items[pk].i=c.toDataURL("image/png");rows();show("picker",false)};im.onerror=()=>alert("File gambar tidak valid.");im.src=r.result};r.readAsDataURL(f)};
+$("hImgPick").onclick=()=>$("hImgFile").click();
+$("hImgFile").onchange=e=>{const f=e.target.files[0];e.target.value="";if(!f)return;busy("Memproses gambar…",()=>new Promise(res=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,1280/im.width),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);bgImg=c.toDataURL("image/jpeg",.8);try{localStorage.setItem(IKEY,bgImg)}catch(x){bgImg=loadImg();alert("Gambar terlalu besar untuk disimpan.")}applyBg(bg);res()};im.onerror=()=>{alert("File gambar tidak valid.");res()};im.src=r.result};r.readAsDataURL(f)}),700).then(()=>toast("✅ Gambar latar diterapkan"))};
+$("hImgDel").onclick=()=>{bgImg=null;try{localStorage.removeItem(IKEY)}catch(e){}applyBg(bg);toast("Gambar latar dihapus")};
+$("bgReset").onclick=()=>{bg=null;bgDirty=false;bgImg=null;try{localStorage.removeItem(IKEY)}catch(e){}try{localStorage.removeItem(BKEY)}catch(e){}applyBg(null);syncBg()};
+$("reset").onclick=()=>{if(confirm("Kembalikan ke daftar awal?")){items=JSON.parse(JSON.stringify(DEFAULTS));persist();render();rows()}};
+$("accBtn").onclick=()=>{const u=$("newUsr").value.trim(),p=$("newPw").value;if(u.length<3||p.length<6)return alert("Username min. 3 karakter, password min. 6 karakter.");busy("Memperbarui akun…",async()=>{if(API_URL){try{const r=await cloud({action:"setAccount",u:cred.u,p:cred.p,nu:u,np:p});if(!r.ok)throw 0;cred={u,p}}catch(e){return alert("Gagal memperbarui akun di server.")}}else{try{localStorage.setItem(AKEY,JSON.stringify({u,h:await sha(p)}))}catch(e){}}$("newUsr").value="";$("newPw").value="";toast("✅ Akun admin diperbarui")},900)};
+$("logoPick").onclick=()=>$("logoFile").click();
+$("logoFile").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,256/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);logo=c.toDataURL("image/png");try{localStorage.setItem(LKEY,logo)}catch(x){}applyLogo()};im.onerror=()=>alert("File gambar tidak valid.");im.src=r.result};r.readAsDataURL(f);e.target.value=""};
+$("logoDel").onclick=()=>{logo=null;try{localStorage.removeItem(LKEY)}catch(e){}applyLogo()};
+$("exp").onclick=()=>{const b=new Blob([JSON.stringify({items,logo,bg,bgImg},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="portal-operator.json";a.click()};
+$("imp").onclick=()=>$("file").click();
+$("file").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result),a=Array.isArray(d)?d:d.items;if(!Array.isArray(a))throw 0;items=a;if("bgImg" in d){bgImg=d.bgImg;try{bgImg?localStorage.setItem(IKEY,bgImg):localStorage.removeItem(IKEY)}catch(x){}}if(d.bg){bg=d.bg;try{localStorage.setItem(BKEY,JSON.stringify(bg))}catch(x){}applyBg(bg);syncBg()}if(d.logo){logo=d.logo;try{localStorage.setItem(LKEY,logo)}catch(x){}}persist();applyBg(bg);applyLogo();render();rows()}catch(x){alert("File tidak valid.")}};r.readAsText(f)};
+let cred=null,saveErr=false;
+async function cloud(b){const r=await fetch(API_URL,{method:"POST",body:JSON.stringify(b)});return r.json()}
+async function cloudLoad(){if(!API_URL)return;try{const r=await(await fetch(API_URL)).json(),d=r.data||{};
+if(Array.isArray(d.items)){items=d.items;persist()}
+if("logo" in d){logo=d.logo;try{logo?localStorage.setItem(LKEY,logo):localStorage.removeItem(LKEY)}catch(e){}}
+if("bg" in d){bg=d.bg;try{bg?localStorage.setItem(BKEY,JSON.stringify(bg)):localStorage.removeItem(BKEY)}catch(e){}}
+if("bgImg" in d){bgImg=d.bgImg;try{bgImg?localStorage.setItem(IKEY,bgImg):localStorage.removeItem(IKEY)}catch(e){}}
+applyBg(bg);applyLogo();render()}catch(e){}}
+applyBg(bg);applyLogo();render();
+if(logo){$("splLogo").src=logo;$("splLogo").hidden=false;$("splEmoji").hidden=true}
+const TKEY="portalOperatorTema";
+function curTema(){try{return localStorage.getItem(TKEY)||"auto"}catch(e){return"auto"}}
+function markTema(){[...$("tg").children].forEach(b=>b.classList.toggle("p",b.dataset.t===curTema()))}
+function setTema(t){try{t==="auto"?localStorage.removeItem(TKEY):localStorage.setItem(TKEY,t)}catch(e){}t==="auto"?document.documentElement.removeAttribute("data-theme"):document.documentElement.setAttribute("data-theme",t);markTema()}
+[["light","☀️ Terang"],["dark","🌙 Gelap"],["auto","🖥️ Otomatis (ikuti perangkat)"]].forEach(([t,n])=>{const b=document.createElement("button");b.textContent=n;b.dataset.t=t;b.onclick=()=>setTema(t);$("tg").appendChild(b)});
+$("tBtn").onclick=()=>{markTema();show("tema",true)};
+$("tClose").onclick=()=>show("tema",false);
+let splOff=false;function hideSpl(){if(splOff)return;splOff=true;const e=$("splash");e.classList.add("off");setTimeout(()=>e.remove(),600)}
+const t0=Date.now();
+Promise.resolve(typeof cloudLoad==="function"?cloudLoad():0).finally(()=>setTimeout(hideSpl,Math.max(0,1000-(Date.now()-t0))));
+setTimeout(hideSpl,7000);
+</script>
+</body>
+</html>
