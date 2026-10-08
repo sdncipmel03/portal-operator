@@ -1,214 +1,1804 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="h-full bg-slate-50">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>try{var t=localStorage.getItem("portalOperatorTema");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<title>Portal Operator SDN Cipinang Melayu 03 Pagi</title>
-<style>
-:root{--bg:#f4f7fb;--card:#fff;--text:#14213d;--muted:#5b6b85;--primary:#1d4ed8;--accent:#f59e0b;--border:#dbe3ef;--hero:linear-gradient(135deg,#1e3a8a,#2563eb);
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1424;--card:#16203a;--text:#e8eefc;--muted:#9bacc9;--primary:#6ea0ff;--border:#26335a;--hero:linear-gradient(135deg,#142a66,#1e40af)}}
-:root[data-theme="dark"]{--bg:#0d1424;--card:#16203a;--text:#e8eefc;--muted:#9bacc9;--primary:#6ea0ff;--border:#26335a;--hero:linear-gradient(135deg,#142a66,#1e40af)}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
-.hero{position:relative;background:var(--hero);background-size:cover;background-position:center;color:#fff;padding:40px 20px 56px;text-align:center}
-.logo{width:88px;height:88px;object-fit:contain;background:#fff;border-radius:50%;padding:6px;margin:0 auto 12px;display:block}.emoji{display:flex;align-items:center;justify-content:center;font-size:44px}.logo[hidden],.emoji[hidden]{display:none}.prev{width:56px;height:56px;object-fit:contain;border:1px solid var(--border);border-radius:50%;background:#fff}
-h3{margin:16px 0 0;font-size:15px}
-.tbtn{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.2);color:#fff;border:none;width:40px;height:40px;border-radius:50%;font-size:18px;padding:0}
-.tg{display:grid;gap:8px;margin:12px 0}
-#splash{position:fixed;inset:0;background:var(--bg);color:var(--text);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;z-index:100;transition:opacity .5s;animation:splashOut .5s 8s forwards}
-#splash.off{opacity:0;pointer-events:none}@keyframes splashOut{to{opacity:0;visibility:hidden;pointer-events:none}}
-.splogo{font-size:56px}
-.pb{width:180px;height:5px;background:var(--border);border-radius:9px;overflow:hidden;margin-top:6px}
-.pb i{display:block;height:100%;width:40%;background:var(--primary);border-radius:9px;animation:pb 1.1s ease-in-out infinite}@keyframes pb{0%{margin-left:-40%}100%{margin-left:100%}}
-.icb{width:56px;height:40px;font-size:22px;padding:0;display:flex;align-items:center;justify-content:center}.icb img,.ic-img{width:32px;height:32px;object-fit:contain;border-radius:6px}.ic .ic-img{width:40px;height:40px}
-.eg{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:6px;margin:12px 0}.eg button{font-size:22px;padding:6px}
-input[type=color]{width:48px;height:34px;padding:0;border:1px solid var(--border);border-radius:8px;background:none;cursor:pointer;vertical-align:middle}
-.bar label{font-size:14px;display:flex;align-items:center;gap:6px}
-.ld{position:fixed;inset:0;background:rgba(10,20,50,.6);backdrop-filter:blur(3px);display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#fff;z-index:50}.ld.on{display:flex}
-.sp{width:48px;height:48px;border:5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
-#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#16a34a;color:#fff;padding:10px 20px;border-radius:99px;z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}#toast.on{opacity:1}
-.hero .badge{display:inline-block;background:rgba(255,255,255,.18);padding:4px 14px;border-radius:99px;font-size:13px;margin-bottom:12px}
-.hero h1{margin:0 0 6px;font-size:clamp(24px,5vw,38px)}
-.hero p{margin:0 auto;max-width:560px;opacity:.9}
-main{max-width:1000px;margin:-32px auto 0;padding:0 16px 32px}
-.search{width:100%;padding:14px 18px;border-radius:14px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:16px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:20px}
-.card{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
-.card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.12);border-color:var(--primary)}
-.card .ic{font-size:28px}.card b{font-size:16px}.card span{color:var(--muted);font-size:13px}
-.empty{text-align:center;color:var(--muted);margin-top:30px}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:20px 16px 30px}
-button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);padding:8px 14px}
-button.p{background:var(--primary);color:#fff;border-color:var(--primary)}
-button.d{color:#dc2626}
-.link{background:none;border:none;color:var(--primary);text-decoration:underline;padding:0}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:flex-start;justify-content:center;padding:20px;overflow:auto;z-index:10}
-.modal.on{display:flex}
-.box{background:var(--card);border-radius:16px;padding:20px;width:100%;max-width:760px;margin:auto}
-.box h2{margin-top:0}
-input[type=text],input[type=password],input[type=url]{width:100%;padding:9px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
-.row{display:grid;grid-template-columns:56px 1fr 1.6fr 1fr auto;gap:8px;margin-bottom:8px;align-items:center}
-.hd{font-size:12px;color:var(--muted)}
-.bar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
-.note{font-size:13px;color:var(--muted)}
-@media(max-width:640px){.row{grid-template-columns:56px 1fr auto}.row .u,.row .ds{grid-column:1/-1}.hd{display:none}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Arsip SDN Cipinang Melayu 03 Pagi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Serif for Kop Surat -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- html2pdf.js for clean PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#074e76',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        kop: ['Tinos', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable-area, #printable-area * {
+                visibility: visible;
+            }
+            #printable-area {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
-<body>
-<div id="splash"><div class="splogo" id="splEmoji">🏫</div><img id="splLogo" class="logo" alt="" hidden><h2 style="margin:6px 0 0">Portal Operator</h2><p class="note" style="margin:0">SDN Cipinang Melayu 03 Pagi</p><div class="pb"><i></i></div><p class="note" style="margin:0">Memuat portal…</p></div>
-<header class="hero">
-  <button class="tbtn" id="tBtn" aria-label="Pengaturan tampilan" title="Pengaturan tampilan">⚙️</button>
-  <img class="logo" id="logo" alt="Logo sekolah" hidden><div class="logo emoji" id="logoEmoji">🏫</div>
-  <div class="badge">Portal Operator</div>
-  <h1>SDN Cipinang Melayu 03 Pagi</h1>
-  <p>Satu pintu untuk semua akses layanan, aplikasi, dan arsip digital sekolah.</p>
-</header>
-<main>
-  <input class="search" id="q" type="search" placeholder="Cari akses portal…" aria-label="Cari">
-  <div class="grid" id="grid"></div>
-  <p class="empty" id="empty" hidden>Tidak ada akses yang cocok.</p>
-</main>
-<footer>© <span id="yr"></span> SDN Cipinang Melayu 03 Pagi · <button class="link" id="adminBtn">Admin</button></footer>
+<body class="h-full text-slate-800 antialiased font-sans custom-scrollbar">
 
-<div class="modal" id="login"><div class="box" style="max-width:340px">
-  <h2>🔐 Masuk Admin</h2>
-  <input type="text" id="usr" placeholder="Username" autocomplete="username" style="margin-bottom:8px"><input type="password" id="pw" placeholder="Password" autocomplete="current-password">
-  <p class="note" id="loginErr" style="color:#dc2626"></p>
-  <div class="bar"><button class="p" id="loginOk">Masuk</button><button id="loginCancel">Batal</button></div>
-</div></div>
+    <!-- GLOBAL LOADING OVERLAY -->
+    <div id="loading-overlay" class="fixed inset-0 z-[100] hidden flex flex-col items-center justify-center bg-slate-900/80 backdrop-blur-md text-white transition-all">
+        <div class="relative flex items-center justify-center">
+            <div class="w-16 h-16 border-4 border-brand-500/30 border-t-brand-400 rounded-full animate-spin"></div>
+            <i class="fa-solid fa-cloud-arrow-up text-brand-400 absolute text-lg animate-bounce"></i>
+        </div>
+        <p id="loading-text" class="mt-4 text-sm font-semibold tracking-wide text-slate-200">Memproses data...</p>
+        <p class="text-xs text-slate-400 mt-1">Harap tunggu sebentar, terhubung dengan Google Services</p>
+    </div>
 
-<div class="modal" id="admin"><div class="box">
-  <h2>⚙️ Panel Admin</h2>
-  <div class="row hd"><span>Ikon</span><span>Nama akses</span><span>Link (URL)</span><span>Keterangan</span><span></span></div>
-  <div id="rows"></div>
-  <div class="bar">
-    <button id="add">+ Tambah akses</button>
-    <button class="p" id="save">Simpan</button>
-    <button id="exp">Ekspor</button>
-    <button id="imp">Impor</button>
-    <button id="reset" class="d">Reset awal</button>
-    <button id="close">🚪 Keluar</button>
-  </div>
-  <h3>🖼️ Logo sekolah (tampil di dashboard)</h3>
-  <div class="bar"><img id="logoPrev" class="prev" alt="" hidden><button id="logoPick">Unggah logo</button><button id="logoDel" class="d">Hapus logo</button></div>
-  <input type="file" id="logoFile" accept="image/*" hidden>
-  <h3>🎨 Latar header di belakang logo (warna atau gambar)</h3>
-  <div class="bar"><label>Warna 1 <input type="color" id="bg1" value="#1e3a8a"></label><label>Warna 2 <input type="color" id="bg2" value="#2563eb"></label><button id="bgReset">Reset warna</button></div>
-  <div class="bar"><button id="hImgPick">🖼️ Unggah gambar latar</button><button id="hImgDel" class="d">Hapus gambar</button></div>
-  <input type="file" id="hImgFile" accept="image/*" hidden>
-  <h3>👤 Akun admin</h3>
-  <div class="bar"><input type="text" id="newUsr" placeholder="Username baru" style="max-width:200px"><input type="password" id="newPw" placeholder="Password baru" style="max-width:200px"><button id="accBtn">Ganti akun</button></div>
-  <p class="note">Setelah mengubah apa pun (termasuk logo dan gambar latar), klik Simpan agar tersimpan ke server dan tampil di semua perangkat. Jika mode cloud belum diaktifkan, data hanya tersimpan di browser ini. Login admin ini hanya pengaman sederhana di sisi browser, bukan keamanan penuh.</p>
-  <input type="file" id="file" accept=".json" hidden>
-</div></div>
+    <!-- LOGIN OVERLAY -->
+    <div id="login-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/80 backdrop-blur-sm p-4 transition-all">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border border-slate-100 transform transition-all">
+            <!-- Header Logo Sekolah -->
+            <div class="bg-gradient-to-r from-brand-800 to-brand-600 p-6 text-white text-center relative">
+                <div class="w-20 h-20 mx-auto bg-white rounded-full p-2 shadow-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img id="login-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png" alt="Logo Sekolah" class="max-h-full max-w-full object-contain" onerror="this.src='https://placehold.co/100x100?text=SDN03'">
+                </div>
+                <h2 id="login-title-school" class="text-xl font-bold tracking-wide">SDN CIPINANG MELAYU 03 PAGI</h2>
+                <p class="text-xs text-brand-100 mt-1">Sistem E-Arsip Digital Terintegrasi Google Sheets</p>
+            </div>
+            
+            <form id="login-form" onsubmit="handleLogin(event)" class="p-6 space-y-4">
+                <div id="login-error" class="hidden p-3 bg-red-50 border border-red-200 text-red-600 text-xs rounded-lg text-center">
+                    Username atau password salah! (Gunakan: operator / admin123)
+                </div>
 
-<div class="modal" id="tema"><div class="box" style="max-width:340px"><h2>⚙️ Pengaturan Tampilan</h2><p class="note">Pilih tema halaman (berlaku di perangkat ini):</p><div class="tg" id="tg"></div><div class="bar"><button id="tClose">Tutup</button></div></div></div>
-<div class="modal" id="picker"><div class="box" style="max-width:420px"><h2>Pilih ikon</h2><div class="eg" id="eg"></div><div class="bar"><button id="icUp">📤 Unggah ikon sendiri</button><button id="icClose">Batal</button></div><input type="file" id="icFile" accept="image/*" hidden></div></div>
-<div class="ld" id="ld"><div class="sp"></div><p id="ldt">Memuat…</p></div><div id="toast"></div>
-<script>
-const API_URL="https://script.google.com/macros/s/AKfycbwuibHHAPZvzKhEOHTMEo61bhSQMxsSuls8vCkLA9gqSlwVeIpD6uF4Z0VT-PMUATan/exec"; // Tempel URL Web App Google Apps Script di sini (lihat panduan)
-const KEY="portalOperatorSDN", PKEY="portalOperatorPIN";
-const DEFAULTS=[
- {i:"📚",n:"Dapodik",u:"https://dapo.kemendikdasmen.go.id",d:"Data pokok pendidikan"},
- {i:"🧑‍🏫",n:"Info GTK",u:"https://info.gtk.kemendikdasmen.go.id",d:"Data guru & tenaga kependidikan"},
- {i:"✅",n:"Verval PD",u:"https://vervalpd.data.kemendikdasmen.go.id",d:"Verifikasi data peserta didik"},
- {i:"💰",n:"ARKAS",u:"https://arkas.kemendikdasmen.go.id",d:"Anggaran & BOS sekolah"},
- {i:"🗂️",n:"Arsip Digital",u:"https://drive.google.com",d:"Folder arsip di Google Drive"},
- {i:"📊",n:"Spreadsheet Sekolah",u:"https://sheets.google.com",d:"Rekap data & laporan"}
-];
-let items=load(), admin=false;
-function load(){try{const s=localStorage.getItem(KEY);if(s)return JSON.parse(s)}catch(e){}return JSON.parse(JSON.stringify(DEFAULTS))}
-function persist(){try{localStorage.setItem(KEY,JSON.stringify(items))}catch(e){}}
-const AKEY="portalOperatorAkun",LKEY="portalOperatorLogo";
-async function sha(s){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
-function getAcc(){try{const s=localStorage.getItem(AKEY);if(s)return JSON.parse(s)}catch(e){}return null}
-const BKEY="portalOperatorBg",BDEF={a:"#1e3a8a",b:"#2563eb"};let bgDirty=false;
-function loadBg(){try{const s=localStorage.getItem(BKEY);if(s)return JSON.parse(s)}catch(e){}return null}
-const IKEY="portalOperatorBgImg";function loadImg(){try{return localStorage.getItem(IKEY)}catch(e){return null}}
-let bgImg=loadImg();let bg=loadBg();
-function applyBg(c){const r=document.documentElement.style;if(bgImg)r.setProperty("--hero","linear-gradient(rgba(10,20,50,.45),rgba(10,20,50,.45)),url('"+bgImg+"')");else if(c)r.setProperty("--hero","linear-gradient(135deg,"+c.a+","+c.b+")");else r.removeProperty("--hero")}
-function syncBg(){const c=bg||BDEF;$("bg1").value=c.a;$("bg2").value=c.b}
-function busy(txt,fn,ms){$("ldt").textContent=txt;$("ld").classList.add("on");return new Promise(res=>setTimeout(async()=>{try{await fn()}finally{$("ld").classList.remove("on")}res()},ms||900))}
-function toast(t){const e=$("toast");e.textContent=t;e.classList.add("on");setTimeout(()=>e.classList.remove("on"),2200)}
-let logo=null;try{logo=localStorage.getItem(LKEY)}catch(e){}
-function applyLogo(){const l=$("logo"),e=$("logoEmoji"),v=$("logoPrev");if(logo){l.src=logo;v.src=logo}l.hidden=!logo;e.hidden=!!logo;v.hidden=!logo}
-const $=id=>document.getElementById(id);
-function safeUrl(u){u=(u||"").trim();if(!u)return"#";if(!/^https?:\/\//i.test(u))u="https://"+u;return u}
-function render(){
-  const q=$("q").value.toLowerCase(),g=$("grid");g.innerHTML="";
-  const list=items.filter(x=>(x.n+" "+x.d).toLowerCase().includes(q));
-  list.forEach(x=>{
-    const a=document.createElement("a");a.className="card";a.href=safeUrl(x.u);a.target="_blank";a.rel="noopener noreferrer";
-    const ic=document.createElement("div");ic.className="ic";icon(ic,x.i);
-    const b=document.createElement("b");b.textContent=x.n;
-    const s=document.createElement("span");s.textContent=x.d||"";
-    a.append(ic,b,s);g.appendChild(a);
-  });
-  $("empty").hidden=list.length>0;
-}
-let pk=-1;
-function icon(el,v){el.textContent="";if(v&&v.startsWith("data:image")){const m=document.createElement("img");m.src=v;m.className="ic-img";m.alt="";el.appendChild(m)}else el.textContent=v||"🔗"}
-function rows(){
-  const r=$("rows");r.innerHTML="";
-  items.forEach((x,k)=>{
-    const w=document.createElement("div");w.className="row";
-    const mk=(cls,key,ph)=>{const e=document.createElement("input");e.type="text";e.value=x[key]||"";e.placeholder=ph;if(cls)e.className=cls;e.oninput=()=>{items[k][key]=e.value};return e};
-    const del=document.createElement("button");del.className="d";del.textContent="🗑";del.title="Hapus";del.onclick=()=>{items.splice(k,1);rows()};
-    const ib=document.createElement("button");ib.className="icb";icon(ib,x.i);ib.title="Pilih ikon";ib.onclick=()=>{pk=k;show("picker",true)};w.append(ib,mk("","n","Nama akses"),mk("u","u","https://…"),mk("ds","d","Keterangan"),del);
-    r.appendChild(w);
-  });
-}
-const show=(id,v)=>$(id).classList.toggle("on",v);
-$("yr").textContent=new Date().getFullYear();
-$("q").oninput=render;
-$("adminBtn").onclick=()=>{$("usr").value="";$("pw").value="";$("loginErr").textContent="";show("login",true);$("usr").focus()};
-$("loginCancel").onclick=()=>show("login",false);
-$("loginOk").onclick=()=>{const u=$("usr").value.trim(),p=$("pw").value;busy("Memeriksa akun…",async()=>{let ok=false;if(API_URL){try{ok=(await cloud({action:"ping",u,p})).ok}catch(e){}if(ok)cred={u,p}}else{const a=getAcc(),h=await sha(p);ok=a?(u===a.u&&h===a.h):(u==="admin"&&h===await sha("admin123"))}if(ok){show("login",false);syncBg();rows();show("admin",true);toast("✅ Login berhasil")}else $("loginErr").textContent="Username/password salah, atau server tidak terjangkau."},1000)};
-$("pw").onkeydown=e=>{if(e.key==="Enter")$("loginOk").click()};
-$("add").onclick=()=>{items.push({i:"🔗",n:"",u:"",d:""});rows()};
-$("save").onclick=()=>busy("Menyimpan perubahan…",async()=>{saveErr=false;items=items.filter(x=>x.n.trim());persist();if(bgDirty){bg={a:$("bg1").value,b:$("bg2").value};try{localStorage.setItem(BKEY,JSON.stringify(bg))}catch(e){}try{localStorage.removeItem(IKEY)}catch(e){}bgDirty=false}render();rows();if(API_URL){try{const r=await cloud({action:"save",u:cred.u,p:cred.p,data:{items,logo,bg,bgImg}});if(!r.ok)saveErr=true}catch(e){saveErr=true}}},1000).then(()=>toast(saveErr?"⚠️ Gagal menyimpan ke cloud":"✅ Berhasil disimpan"));
-$("close").onclick=()=>busy("Keluar…",()=>{cred=null;items=load();bg=loadBg();bgImg=loadImg();applyBg(bg);bgDirty=false;render();show("admin",false)},800).then(()=>toast("Anda telah keluar"));
-$("bg1").oninput=$("bg2").oninput=()=>{bgDirty=true;bgImg=null;applyBg({a:$("bg1").value,b:$("bg2").value})};
-const EMOJIS="📚 📖 🗂️ 📁 📊 📈 📝 ✅ 🧑‍🏫 👨‍🎓 🏫 🎓 💰 🧾 📅 📧 📞 🌐 🔗 🔒 🔑 ⚙️ 🖥️ 💻 📱 🖨️ ☁️ 📤 📥 📌 🔔 📢 🏆 ⭐ ❤️ 🧮 🔬 🎨 🎵 ⚽ 🚌 🏥 🍽️ 🛠️ 📷 🗃️".split(" ");
-EMOJIS.forEach(e=>{const b=document.createElement("button");b.textContent=e;b.onclick=()=>{items[pk].i=e;rows();show("picker",false)};$("eg").appendChild(b)});
-$("icClose").onclick=()=>show("picker",false);
-$("icUp").onclick=()=>$("icFile").click();
-$("icFile").onchange=e=>{const f=e.target.files[0];e.target.value="";if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,96/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);items[pk].i=c.toDataURL("image/png");rows();show("picker",false)};im.onerror=()=>alert("File gambar tidak valid.");im.src=r.result};r.readAsDataURL(f)};
-$("hImgPick").onclick=()=>$("hImgFile").click();
-$("hImgFile").onchange=e=>{const f=e.target.files[0];e.target.value="";if(!f)return;busy("Memproses gambar…",()=>new Promise(res=>{const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,1280/im.width),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);bgImg=c.toDataURL("image/jpeg",.8);try{localStorage.setItem(IKEY,bgImg)}catch(x){bgImg=loadImg();alert("Gambar terlalu besar untuk disimpan.")}applyBg(bg);res()};im.onerror=()=>{alert("File gambar tidak valid.");res()};im.src=r.result};r.readAsDataURL(f)}),700).then(()=>toast("✅ Gambar latar diterapkan"))};
-$("hImgDel").onclick=()=>{bgImg=null;try{localStorage.removeItem(IKEY)}catch(e){}applyBg(bg);toast("Gambar latar dihapus")};
-$("bgReset").onclick=()=>{bg=null;bgDirty=false;bgImg=null;try{localStorage.removeItem(IKEY)}catch(e){}try{localStorage.removeItem(BKEY)}catch(e){}applyBg(null);syncBg()};
-$("reset").onclick=()=>{if(confirm("Kembalikan ke daftar awal?")){items=JSON.parse(JSON.stringify(DEFAULTS));persist();render();rows()}};
-$("accBtn").onclick=()=>{const u=$("newUsr").value.trim(),p=$("newPw").value;if(u.length<3||p.length<6)return alert("Username min. 3 karakter, password min. 6 karakter.");busy("Memperbarui akun…",async()=>{if(API_URL){try{const r=await cloud({action:"setAccount",u:cred.u,p:cred.p,nu:u,np:p});if(!r.ok)throw 0;cred={u,p}}catch(e){return alert("Gagal memperbarui akun di server.")}}else{try{localStorage.setItem(AKEY,JSON.stringify({u,h:await sha(p)}))}catch(e){}}$("newUsr").value="";$("newPw").value="";toast("✅ Akun admin diperbarui")},900)};
-$("logoPick").onclick=()=>$("logoFile").click();
-$("logoFile").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,256/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext("2d").drawImage(im,0,0,c.width,c.height);logo=c.toDataURL("image/png");try{localStorage.setItem(LKEY,logo)}catch(x){}applyLogo()};im.onerror=()=>alert("File gambar tidak valid.");im.src=r.result};r.readAsDataURL(f);e.target.value=""};
-$("logoDel").onclick=()=>{logo=null;try{localStorage.removeItem(LKEY)}catch(e){}applyLogo()};
-$("exp").onclick=()=>{const b=new Blob([JSON.stringify({items,logo,bg,bgImg},null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="portal-operator.json";a.click()};
-$("imp").onclick=()=>$("file").click();
-$("file").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result),a=Array.isArray(d)?d:d.items;if(!Array.isArray(a))throw 0;items=a;if("bgImg" in d){bgImg=d.bgImg;try{bgImg?localStorage.setItem(IKEY,bgImg):localStorage.removeItem(IKEY)}catch(x){}}if(d.bg){bg=d.bg;try{localStorage.setItem(BKEY,JSON.stringify(bg))}catch(x){}applyBg(bg);syncBg()}if(d.logo){logo=d.logo;try{localStorage.setItem(LKEY,logo)}catch(x){}}persist();applyBg(bg);applyLogo();render();rows()}catch(x){alert("File tidak valid.")}};r.readAsText(f)};
-let cred=null,saveErr=false;
-async function cloud(b){const r=await fetch(API_URL,{method:"POST",body:JSON.stringify(b)});return r.json()}
-async function cloudLoad(){if(!API_URL)return;try{const r=await(await fetch(API_URL)).json(),d=r.data||{};
-if(Array.isArray(d.items)){items=d.items;persist()}
-if("logo" in d){logo=d.logo;try{logo?localStorage.setItem(LKEY,logo):localStorage.removeItem(LKEY)}catch(e){}}
-if("bg" in d){bg=d.bg;try{bg?localStorage.setItem(BKEY,JSON.stringify(bg)):localStorage.removeItem(BKEY)}catch(e){}}
-if("bgImg" in d){bgImg=d.bgImg;try{bgImg?localStorage.setItem(IKEY,bgImg):localStorage.removeItem(IKEY)}catch(e){}}
-applyBg(bg);applyLogo();render()}catch(e){}}
-applyBg(bg);applyLogo();render();
-if(logo){$("splLogo").src=logo;$("splLogo").hidden=false;$("splEmoji").hidden=true}
-const TKEY="portalOperatorTema";
-function curTema(){try{return localStorage.getItem(TKEY)||"auto"}catch(e){return"auto"}}
-function markTema(){[...$("tg").children].forEach(b=>b.classList.toggle("p",b.dataset.t===curTema()))}
-function setTema(t){try{t==="auto"?localStorage.removeItem(TKEY):localStorage.setItem(TKEY,t)}catch(e){}t==="auto"?document.documentElement.removeAttribute("data-theme"):document.documentElement.setAttribute("data-theme",t);markTema()}
-[["light","☀️ Terang"],["dark","🌙 Gelap"],["auto","🖥️ Otomatis (ikuti perangkat)"]].forEach(([t,n])=>{const b=document.createElement("button");b.textContent=n;b.dataset.t=t;b.onclick=()=>setTema(t);$("tg").appendChild(b)});
-$("tBtn").onclick=()=>{markTema();show("tema",true)};
-$("tClose").onclick=()=>show("tema",false);
-let splOff=false;function hideSpl(){if(splOff)return;splOff=true;const e=$("splash");e.classList.add("off");setTimeout(()=>e.remove(),600)}
-const t0=Date.now();
-Promise.resolve(typeof cloudLoad==="function"?cloudLoad():0).finally(()=>setTimeout(hideSpl,Math.max(0,1000-(Date.now()-t0))));
-setTimeout(hideSpl,7000);
-</script>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Username Operator</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                            <i class="fa-solid fa-user text-sm"></i>
+                        </span>
+                        <input type="text" id="username" required value="operator" placeholder="Masukkan username"
+                            class="w-full pl-10 pr-4 py-2.5 text-sm border border-slate-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Password</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+                            <i class="fa-solid fa-lock text-sm"></i>
+                        </span>
+                        <input type="password" id="password" required value="admin123" placeholder="Masukkan password"
+                            class="w-full pl-10 pr-4 py-2.5 text-sm border border-slate-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                    <label class="flex items-center cursor-pointer">
+                        <input type="checkbox" checked class="rounded border-slate-300 text-brand-600 focus:ring-brand-500">
+                        <span class="ml-2">Ingat Sesi Saya</span>
+                    </label>
+                    <a href="#" onclick="showToast('Silakan hubungi Kepala Sekolah untuk reset password', 'info')" class="text-brand-600 hover:underline">Lupa Password?</a>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-medium py-3 rounded-xl shadow-md transition duration-200 flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>Masuk ke E-Arsip</span>
+                </button>
+
+                <div class="pt-3 border-t border-slate-100 text-center text-xs text-slate-400">
+                    Sistem Tata Usaha & Kearsipan &copy; 2026 SDN Cipinang Melayu 03 Pagi
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MAIN APP STRUCTURE -->
+    <div id="main-app" class="hidden min-h-screen flex flex-col md:flex-row bg-slate-100">
+
+        <!-- SIDEBAR -->
+        <aside class="w-full md:w-64 bg-slate-900 text-slate-300 flex-shrink-0 flex flex-col justify-between shadow-xl">
+            <div>
+                <!-- Brand Header -->
+                <div class="p-5 bg-slate-950 flex items-center space-x-3 border-b border-slate-800">
+                    <div class="w-10 h-10 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-lg shadow-md">
+                        03
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-white text-sm leading-tight uppercase" id="sidebar-school-title">SDN CIPINANG MELAYU 03</h1>
+                        <p class="text-xs text-emerald-400 font-medium flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 mr-1 animate-pulse"></span> E-Arsip Real-Time
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="p-4 space-y-1 text-sm font-medium">
+                    <div class="px-3 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">Utama</div>
+                    
+                    <button onclick="switchTab('dashboard')" id="nav-dashboard" class="nav-btn w-full flex items-center space-x-3 px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-chart-pie w-5 text-center text-brand-400"></i>
+                        <span>Dashboard</span>
+                    </button>
+
+                    <div class="px-3 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider mt-4">Kategori Surat</div>
+
+                    <button onclick="switchTab('surat-masuk')" id="nav-surat-masuk" class="nav-btn w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-inbox w-5 text-center text-blue-400"></i>
+                            <span>Surat Masuk</span>
+                        </div>
+                        <span id="badge-masuk" class="bg-blue-900/60 text-blue-300 text-xs px-2 py-0.5 rounded-full">0</span>
+                    </button>
+
+                    <button onclick="switchTab('surat-keluar')" id="nav-surat-keluar" class="nav-btn w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-paper-plane w-5 text-center text-emerald-400"></i>
+                            <span>Surat Keluar</span>
+                        </div>
+                        <span id="badge-keluar" class="bg-emerald-900/60 text-emerald-300 text-xs px-2 py-0.5 rounded-full">0</span>
+                    </button>
+
+                    <button onclick="switchTab('surat-tugas')" id="nav-surat-tugas" class="nav-btn w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-clipboard-user w-5 text-center text-amber-400"></i>
+                            <span>Surat Tugas</span>
+                        </div>
+                        <span id="badge-tugas" class="bg-amber-900/60 text-amber-300 text-xs px-2 py-0.5 rounded-full">0</span>
+                    </button>
+
+                    <button onclick="switchTab('sk-kepsek')" id="nav-sk-kepsek" class="nav-btn w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-file-signature w-5 text-center text-purple-400"></i>
+                            <span>SK Kepala Sekolah</span>
+                        </div>
+                        <span id="badge-sk" class="bg-purple-900/60 text-purple-300 text-xs px-2 py-0.5 rounded-full">0</span>
+                    </button>
+
+                    <div class="px-3 py-2 text-xs font-semibold text-slate-500 uppercase tracking-wider mt-4">Sistem & Pengaturan</div>
+
+                    <button onclick="switchTab('laporan')" id="nav-laporan" class="nav-btn w-full flex items-center space-x-3 px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-file-pdf w-5 text-center text-rose-400"></i>
+                        <span>Laporan & Cetak PDF</span>
+                    </button>
+
+                    <button onclick="switchTab('pengaturan')" id="nav-pengaturan" class="nav-btn w-full flex items-center space-x-3 px-3 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-sliders w-5 text-center text-sky-400"></i>
+                        <span>Pengaturan Kop & Logo</span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- User Info & Logout -->
+            <div class="p-4 border-t border-slate-800 bg-slate-950/50">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-sm shadow">
+                            OP
+                        </div>
+                        <div class="text-xs">
+                            <p class="font-bold text-white" id="user-display-name">AHMAD RIZAL, A.Md</p>
+                            <p class="text-slate-400" id="user-display-nip">NIP. 198804122015031002</p>
+                        </div>
+                    </div>
+                    <button onclick="handleLogout()" title="Keluar" class="text-slate-400 hover:text-red-400 p-2 rounded-lg transition">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENT AREA -->
+        <main class="flex-1 flex flex-col min-w-0 overflow-y-auto">
+            
+            <!-- TOP BAR HEADER -->
+            <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-30 shadow-sm">
+                <div class="flex items-center space-x-3">
+                    <h2 id="page-title" class="text-xl font-bold text-slate-800">Dashboard Utama</h2>
+                    <span id="sync-status" class="hidden sm:inline-flex items-center space-x-1.5 text-xs bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full border border-emerald-200 font-medium">
+                        <i class="fa-solid fa-cloud-arrow-up text-emerald-500"></i>
+                        <span>Google Sheets Sync</span>
+                    </span>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                    <button onclick="fetchLatestData()" title="Sinkronkan dengan Google Sheets" class="p-2 text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-xl transition text-xs flex items-center space-x-1">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <span class="hidden md:inline">Sync Data</span>
+                    </button>
+
+                    <div class="relative hidden md:block">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-xs text-slate-400"></i>
+                        <input type="text" id="global-search" onkeyup="handleGlobalSearch(event)" placeholder="Cari nomor / perihal surat..."
+                            class="pl-9 pr-4 py-1.5 text-xs bg-slate-100 border border-slate-200 rounded-full w-60 focus:outline-none focus:ring-2 focus:ring-brand-500 transition">
+                    </div>
+                    
+                    <button onclick="openModalAdd()" class="bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2 shadow-sm transition">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Tambah Surat</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- CONTAINER FOR TABS -->
+            <div class="p-6 space-y-6">
+
+                <!-- TAB 1: DASHBOARD VIEW -->
+                <div id="tab-dashboard" class="tab-content space-y-6">
+                    
+                    <!-- Banner -->
+                    <div class="bg-gradient-to-r from-brand-800 via-brand-700 to-brand-600 rounded-2xl p-6 text-white shadow-lg flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+                        <div class="space-y-2 z-10 max-w-2xl">
+                            <div class="inline-flex items-center space-x-2 bg-brand-900/50 text-brand-200 px-3 py-1 rounded-full text-xs border border-brand-500/30">
+                                <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                <span>Terhubung ke Google Spreadsheet Database</span>
+                            </div>
+                            <h3 class="text-2xl font-bold" id="dashboard-welcome-heading">Portal E-Arsip Surat SDN Cipinang Melayu 03 Pagi</h3>
+                            <p class="text-sm text-brand-100">Sistem pendataan otomatis tersimpan di Google Sheets, dilengkapi cetak disposisi resmi, laporan PDF real-time, dan pengatur Kop Surat sekolah.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0 z-10 flex space-x-2">
+                            <button onclick="switchTab('laporan')" class="bg-white text-brand-800 hover:bg-brand-50 font-semibold px-4 py-2.5 rounded-xl text-xs shadow transition">
+                                <i class="fa-solid fa-print mr-1"></i> Cetak Laporan PDF
+                            </button>
+                        </div>
+                        <i class="fa-solid fa-folder-tree absolute right-[-20px] bottom-[-30px] text-white/10 text-9xl pointer-events-none"></i>
+                    </div>
+
+                    <!-- Stat Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between hover:shadow-md transition">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Surat Masuk</p>
+                                <h4 id="stat-masuk" class="text-2xl font-extrabold text-slate-800 mt-1">0</h4>
+                                <p class="text-xs text-blue-600 font-medium mt-1"><i class="fa-solid fa-arrow-down mr-1"></i>Agenda Sekolah</p>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-inbox"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between hover:shadow-md transition">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Surat Keluar</p>
+                                <h4 id="stat-keluar" class="text-2xl font-extrabold text-slate-800 mt-1">0</h4>
+                                <p class="text-xs text-emerald-600 font-medium mt-1"><i class="fa-solid fa-arrow-up mr-1"></i>Dinas / Instansi</p>
+                            </div>
+                            <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between hover:shadow-md transition">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Surat Tugas</p>
+                                <h4 id="stat-tugas" class="text-2xl font-extrabold text-slate-800 mt-1">0</h4>
+                                <p class="text-xs text-amber-600 font-medium mt-1"><i class="fa-solid fa-user-gear mr-1"></i>Guru & Staff</p>
+                            </div>
+                            <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-clipboard-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm flex items-center justify-between hover:shadow-md transition">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">SK Kepala Sekolah</p>
+                                <h4 id="stat-sk" class="text-2xl font-extrabold text-slate-800 mt-1">0</h4>
+                                <p class="text-xs text-purple-600 font-medium mt-1"><i class="fa-solid fa-certificate mr-1"></i>Penetapan Resmi</p>
+                            </div>
+                            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chart & Activity Section -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="lg:col-span-2 bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <h4 class="font-bold text-slate-800 text-sm">Grafik Rekapitulasi Arsip Surat</h4>
+                                    <p class="text-xs text-slate-500">Statistik aktivitas arsip surat tersimpan di Google Spreadsheet</p>
+                                </div>
+                                <div class="text-xs text-slate-400">Real-time Sync</div>
+                            </div>
+                            <div class="h-64 relative">
+                                <canvas id="chartSurat"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm mb-3">Aktivitas Surat Terakhir</h4>
+                                <div id="recent-activities" class="space-y-3 text-xs">
+                                    <!-- Dynamic items -->
+                                </div>
+                            </div>
+                            <button onclick="switchTab('laporan')" class="w-full mt-4 py-2 border border-slate-200 text-slate-600 font-semibold rounded-xl text-xs hover:bg-slate-50 transition">
+                                Lihat Seluruh Arsip &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: SURAT MASUK -->
+                <div id="tab-surat-masuk" class="tab-content hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <div class="relative w-full sm:w-72">
+                            <i class="fa-solid fa-search absolute left-3 top-2.5 text-xs text-slate-400"></i>
+                            <input type="text" id="search-masuk" onkeyup="renderTable('masuk')" placeholder="Cari pengirim / no surat..."
+                                class="w-full pl-9 pr-3 py-1.5 text-xs border border-slate-300 rounded-xl focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <button onclick="openModalAdd('Surat Masuk')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Catat Surat Masuk</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-xs">
+                                <thead class="bg-slate-50 text-slate-600 uppercase font-semibold border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3">ID Agenda</th>
+                                        <th class="p-3">No. Surat & Tanggal</th>
+                                        <th class="p-3">Pengirim</th>
+                                        <th class="p-3">Perihal / Ringkasan</th>
+                                        <th class="p-3">Tgl Diterima</th>
+                                        <th class="p-3 text-center">Disposisi</th>
+                                        <th class="p-3 text-center">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-masuk" class="divide-y divide-slate-100 text-slate-700">
+                                    <!-- Table Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: SURAT KELUAR -->
+                <div id="tab-surat-keluar" class="tab-content hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <div class="relative w-full sm:w-72">
+                            <i class="fa-solid fa-search absolute left-3 top-2.5 text-xs text-slate-400"></i>
+                            <input type="text" id="search-keluar" onkeyup="renderTable('keluar')" placeholder="Cari tujuan / no surat..."
+                                class="w-full pl-9 pr-3 py-1.5 text-xs border border-slate-300 rounded-xl focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <button onclick="openModalAdd('Surat Keluar')" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Buat Surat Keluar</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-xs">
+                                <thead class="bg-slate-50 text-slate-600 uppercase font-semibold border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3">No. Surat</th>
+                                        <th class="p-3">Tanggal Surat</th>
+                                        <th class="p-3">Tujuan Surat</th>
+                                        <th class="p-3">Perihal</th>
+                                        <th class="p-3">Pembuat</th>
+                                        <th class="p-3 text-center">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-keluar" class="divide-y divide-slate-100 text-slate-700">
+                                    <!-- Table Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: SURAT TUGAS -->
+                <div id="tab-surat-tugas" class="tab-content hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <div class="relative w-full sm:w-72">
+                            <i class="fa-solid fa-search absolute left-3 top-2.5 text-xs text-slate-400"></i>
+                            <input type="text" id="search-tugas" onkeyup="renderTable('tugas')" placeholder="Cari nama guru / tugas..."
+                                class="w-full pl-9 pr-3 py-1.5 text-xs border border-slate-300 rounded-xl focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <button onclick="openModalAdd('Surat Tugas')" class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Terbitkan Surat Tugas</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-xs">
+                                <thead class="bg-slate-50 text-slate-600 uppercase font-semibold border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3">No. Surat Tugas</th>
+                                        <th class="p-3">Yang Ditugaskan</th>
+                                        <th class="p-3">Kegiatan / Tugas</th>
+                                        <th class="p-3">Tanggal Pelaksanaan</th>
+                                        <th class="p-3 text-center">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-tugas" class="divide-y divide-slate-100 text-slate-700">
+                                    <!-- Table Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 5: SK KEPALA SEKOLAH -->
+                <div id="tab-sk-kepsek" class="tab-content hidden space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <div class="relative w-full sm:w-72">
+                            <i class="fa-solid fa-search absolute left-3 top-2.5 text-xs text-slate-400"></i>
+                            <input type="text" id="search-sk" onkeyup="renderTable('sk')" placeholder="Cari judul SK / perihal..."
+                                class="w-full pl-9 pr-3 py-1.5 text-xs border border-slate-300 rounded-xl focus:ring-2 focus:ring-brand-500">
+                        </div>
+                        <button onclick="openModalAdd('SK Kepsek')" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-xl text-xs font-semibold flex items-center space-x-2">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Input SK Kepala Sekolah</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse text-xs">
+                                <thead class="bg-slate-50 text-slate-600 uppercase font-semibold border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3">No. SK</th>
+                                        <th class="p-3">Tentang / Judul Penetapan</th>
+                                        <th class="p-3">Tanggal Penetapan</th>
+                                        <th class="p-3">Status</th>
+                                        <th class="p-3 text-center">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-sk" class="divide-y divide-slate-100 text-slate-700">
+                                    <!-- Table Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 6: LAPORAN & CETAK PDF -->
+                <div id="tab-laporan" class="tab-content hidden space-y-6">
+                    
+                    <!-- Filter Controls -->
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-base">Filter Laporan Arsip Surat Real-Time</h3>
+                                <p class="text-xs text-slate-500">Pilih kategori dan rentang tanggal untuk mencetak laporan resmi bertanda tangan sekolah</p>
+                            </div>
+                            <div class="flex space-x-2">
+                                <button onclick="generateReportPDF()" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 shadow transition">
+                                    <i class="fa-solid fa-file-pdf text-sm"></i>
+                                    <span>Unduh PDF Real-Time</span>
+                                </button>
+                                <button onclick="window.print()" class="bg-slate-800 hover:bg-slate-900 text-white font-semibold px-4 py-2 rounded-xl text-xs flex items-center space-x-2 transition">
+                                    <i class="fa-solid fa-print"></i>
+                                    <span>Cetak Langsung</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+                            <div>
+                                <label class="block font-semibold text-slate-600 mb-1">Kategori Surat</label>
+                                <select id="report-category" onchange="renderReportPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 bg-slate-50">
+                                    <option value="ALL">Semua Kategori Surat</option>
+                                    <option value="Surat Masuk">Surat Masuk Only</option>
+                                    <option value="Surat Keluar">Surat Keluar Only</option>
+                                    <option value="Surat Tugas">Surat Tugas Only</option>
+                                    <option value="SK Kepsek">SK Kepala Sekolah Only</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-600 mb-1">Bulan Pelaporan</label>
+                                <select id="report-month" onchange="renderReportPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 bg-slate-50">
+                                    <option value="ALL">Semua Bulan (Tahun 2026)</option>
+                                    <option value="01">Januari 2026</option>
+                                    <option value="02">Februari 2026</option>
+                                    <option value="03" selected>Maret 2026</option>
+                                    <option value="04">April 2026</option>
+                                    <option value="05">Mei 2026</option>
+                                    <option value="06">Juni 2026</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-600 mb-1">Urutkan Berdasarkan</label>
+                                <select id="report-sort" onchange="renderReportPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 bg-slate-50">
+                                    <option value="DATE_DESC">Tanggal Terbaru</option>
+                                    <option value="DATE_ASC">Tanggal Terlama</option>
+                                </select>
+                            </div>
+                            <div class="flex items-end">
+                                <button onclick="renderReportPreview()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2.5 rounded-xl transition">
+                                    <i class="fa-solid fa-arrows-rotate mr-1"></i> Refresh Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRINTABLE DOCUMENT CONTAINER (KOP SURAT) -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-lg overflow-x-auto">
+                        <div id="printable-area" class="max-w-4xl mx-auto p-8 bg-white text-black font-sans">
+                            
+                            <!-- KOP SURAT RESMI DINAMIS -->
+                            <div class="border-b-4 border-double border-black pb-3 mb-6 text-center relative">
+                                <div class="flex items-center justify-between">
+                                    <!-- Logo 1 (DKI / Pemda) -->
+                                    <div class="w-20 text-center flex items-center justify-center p-1">
+                                        <img id="print-kop-logo1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png" alt="Logo Pemda" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/80x80?text=DKI'">
+                                    </div>
+                                    
+                                    <!-- Header Teks Kop Surat -->
+                                    <div class="flex-1 px-4">
+                                        <h4 id="print-kop-instansi" class="font-serif uppercase tracking-wider text-xs font-bold">PEMERINTAH PROVINSI DKI JAKARTA</h4>
+                                        <h4 id="print-kop-dinas" class="font-serif uppercase tracking-wider text-xs font-bold">DINAS PENDIDIKAN</h4>
+                                        <h3 id="print-kop-sudin" class="font-serif uppercase tracking-wider text-sm font-bold">SUKU DINAS PENDIDIKAN WILAYAH II JAKARTA TIMUR</h3>
+                                        <h2 id="print-kop-sekolah" class="font-serif uppercase tracking-wider text-lg font-black mt-1 text-slate-900">SDN CIPINANG MELAYU 03 PAGI</h2>
+                                        <p id="print-kop-alamat" class="font-serif text-[11px] italic mt-0.5">Jl. Skuadron Komp. Halim Perdanakusuma, Cipinang Melayu, Kec. Makasar, Jakarta Timur</p>
+                                        <p id="print-kop-kontak" class="font-serif text-[10px]">Email: sdncm03pagi@jakarta.go.id | NPSN: 20104328 | Kodepos: 13620</p>
+                                    </div>
+
+                                    <!-- Logo 2 (Tut Wuri / Sekolah) -->
+                                    <div class="w-20 text-center flex items-center justify-center p-1">
+                                        <img id="print-kop-logo2" src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Logo_Tut_Wuri_Handayani.png" alt="Logo Tutwuri" class="h-20 w-auto object-contain" onerror="this.src='https://placehold.co/80x80?text=Tutwuri'">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Title Laporan -->
+                            <div class="text-center mb-6">
+                                <h3 class="font-bold text-base uppercase underline" id="report-title-header">REKAPITULASI ARSIP SURAT MASUK & KELUAR</h3>
+                                <p class="text-xs text-slate-600 mt-1" id="report-subtitle-header">
+                            </div>
+
+                            <!-- Table Content Laporan -->
+                            <table class="w-full text-left border-collapse text-xs border border-black mb-8">
+                                <thead class="bg-slate-100 uppercase text-black font-bold">
+                                    <tr>
+                                        <th class="border border-black p-2 text-center w-10">No</th>
+                                        <th class="border border-black p-2">Kategori</th>
+                                        <th class="border border-black p-2">No. Surat</th>
+                                        <th class="border border-black p-2">Tanggal</th>
+                                        <th class="border border-black p-2">Pengirim / Tujuan</th>
+                                        <th class="border border-black p-2">Perihal / Keterangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="report-table-body">
+                                    <!-- Dynamic rows for report -->
+                                </tbody>
+                            </table>
+
+                            <!-- Signatures Section -->
+                            <div class="flex justify-between items-end text-xs mt-12 pt-4">
+                                <div class="text-center w-60">
+                                    <p>Mengetahui,</p>
+                                    <p class="font-bold uppercase mt-1">Kepala SDN Cipinang Melayu 03</p>
+                                    <div class="h-16"></div>
+                                    <p class="font-bold underline" id="print-signature-kepsek-nama">Hj. SITI NURAENI, M.Pd</p>
+                                    <p id="print-signature-kepsek-nip">NIP. 197208151998032001</p>
+                                </div>
+
+                                <div class="text-center w-60">
+                                    <p id="report-date-signature">Jakarta, 23 Maret 2026</p>
+                                    <p class="font-bold uppercase mt-1">Pengelola Arsip / Operator</p>
+                                    <div class="h-16"></div>
+                                    <p class="font-bold underline" id="print-signature-operator-nama">AHMAD RIZAL, A.Md</p>
+                                    <p id="print-signature-operator-nip">NIP. 198804122015031002</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 7: PENGATURAN KOP SURAT & LOGO -->
+                <div id="tab-pengaturan" class="tab-content hidden space-y-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
+                        <div class="border-b border-slate-100 pb-4 flex items-center justify-between">
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-lg">Pengaturan Kop Surat & Identitas Sekolah</h3>
+                                <p class="text-xs text-slate-500">Sesuaikan logo login, logo kop, alamat, dan penandatangan. Gambar dapat diunggah langsung ke Google Drive.</p>
+                            </div>
+                            <button onclick="saveSettingsForm(event)" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-xl text-xs flex items-center space-x-2 shadow transition">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                <span>Simpan Pengaturan Kop</span>
+                            </button>
+                        </div>
+
+                        <form id="form-settings" class="space-y-6">
+                            
+                            <!-- Section Logo Dashboard & Kop Surat -->
+                            <div>
+                                <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-3 text-brand-700 flex items-center">
+                                    <i class="fa-solid fa-image mr-2"></i> Logo Dashboard Login & Kop Surat (URL / Upload Drive)
+                                </h4>
+                                
+                                <!-- Logo Login Dashboard -->
+                                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 mb-4 space-y-2">
+                                    <label class="block font-bold text-slate-800 text-xs">Logo Dashboard Login Sekolah</label>
+                                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                                        <input type="url" id="setting-loginLogoUrl" oninput="updateSettingsPreview()" placeholder="https://..." class="flex-1 border border-slate-300 rounded-xl p-2.5 text-xs bg-white">
+                                        <label class="bg-slate-800 hover:bg-slate-900 text-white px-3 py-2.5 rounded-xl text-xs font-semibold cursor-pointer text-center transition flex items-center justify-center space-x-1.5 shrink-0">
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                            <span>Upload Logo Ke Drive</span>
+                                            <input type="file" accept="image/*" class="hidden" onchange="uploadLogoToDrive(event, 'loginLogoUrl')">
+                                        </label>
+                                    </div>
+                                    <p class="text-[11px] text-slate-500">Logo ini tampil di halaman login utama dan header dashboard sekolah.</p>
+                                </div>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2">
+                                        <label class="block font-semibold text-slate-700">URL Logo 1 (Kiri - Pemda DKI / Instansi)</label>
+                                        <div class="flex items-center space-x-2">
+                                            <input type="url" id="setting-logo1Url" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2 bg-white text-xs">
+                                            <label class="bg-brand-600 hover:bg-brand-700 text-white px-2.5 py-2 rounded-xl text-[11px] font-medium cursor-pointer shrink-0 transition" title="Upload Gambar ke Drive">
+                                                <i class="fa-solid fa-upload"></i>
+                                                <input type="file" accept="image/*" class="hidden" onchange="uploadLogoToDrive(event, 'logo1Url')">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-2">
+                                        <label class="block font-semibold text-slate-700">URL Logo 2 (Kanan - Tutwuri / Logo Sekolah)</label>
+                                        <div class="flex items-center space-x-2">
+                                            <input type="url" id="setting-logo2Url" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2 bg-white text-xs">
+                                            <label class="bg-brand-600 hover:bg-brand-700 text-white px-2.5 py-2 rounded-xl text-[11px] font-medium cursor-pointer shrink-0 transition" title="Upload Gambar ke Drive">
+                                                <i class="fa-solid fa-upload"></i>
+                                                <input type="file" accept="image/*" class="hidden" onchange="uploadLogoToDrive(event, 'logo2Url')">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2: Text Identitas Kop -->
+                            <div class="border-t border-slate-100 pt-4">
+                                <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-3 text-brand-700 flex items-center">
+                                    <i class="fa-solid fa-building mr-2"></i> Hierarki Teks Kop Surat
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Teks Baris 1 (Pemda / Provinsi)</label>
+                                        <input type="text" id="setting-instansiTop" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Teks Baris 2 (Dinas Utama)</label>
+                                        <input type="text" id="setting-dinasName" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Teks Baris 3 (Suku Dinas / Wilayah)</label>
+                                        <input type="text" id="setting-sudinName" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Nama Utama Sekolah / Satker</label>
+                                        <input type="text" id="setting-sekolahName" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs font-bold">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 3: Alamat & Kontak -->
+                            <div class="border-t border-slate-100 pt-4">
+                                <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-3 text-brand-700 flex items-center">
+                                    <i class="fa-solid fa-location-dot mr-2"></i> Alamat & Kontak
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Alamat Lengkap Sekolah</label>
+                                        <input type="text" id="setting-alamatSekolah" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Informasi Kontak (Email, NPSN, Kodepos)</label>
+                                        <input type="text" id="setting-kontakSekolah" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 4: Penandatangan -->
+                            <div class="border-t border-slate-100 pt-4">
+                                <h4 class="font-bold text-slate-700 text-xs uppercase tracking-wider mb-3 text-brand-700 flex items-center">
+                                    <i class="fa-solid fa-signature mr-2"></i> Identitas Penandatangan Dokumen
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Nama Kepala Sekolah & Gelar</label>
+                                        <input type="text" id="setting-namaKepsek" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">NIP Kepala Sekolah</label>
+                                        <input type="text" id="setting-nipKepsek" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">Nama Pengelola Arsip / Operator TU</label>
+                                        <input type="text" id="setting-namaOperator" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                    <div>
+                                        <label class="block font-semibold text-slate-600 mb-1">NIP Operator TU</label>
+                                        <input type="text" id="setting-nipOperator" oninput="updateSettingsPreview()" class="w-full border border-slate-300 rounded-xl p-2.5 text-xs">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- MODAL ADD / EDIT SURAT -->
+    <div id="modal-add" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden border border-slate-100">
+            <div class="bg-slate-900 text-white p-4 flex items-center justify-between">
+                <h3 id="modal-title" class="font-bold text-sm">Form Data Surat Baru</h3>
+                <button onclick="closeModalAdd()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+
+            <form id="form-surat" onsubmit="handleSaveSurat(event)" class="p-6 space-y-4 text-xs">
+                <input type="hidden" id="form-id">
+                
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Kategori Surat *</label>
+                    <select id="form-kategori" required onchange="toggleFormFields()" class="w-full border border-slate-300 rounded-xl p-2.5">
+                        <option value="Surat Masuk">Surat Masuk</option>
+                        <option value="Surat Keluar">Surat Keluar</option>
+                        <option value="Surat Tugas">Surat Tugas</option>
+                        <option value="SK Kepsek">SK Kepala Sekolah</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Nomor Surat *</label>
+                        <input type="text" id="form-nosurat" required placeholder="Contoh: 042/SDNCM03/III/2026" class="w-full border border-slate-300 rounded-xl p-2.5">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Tanggal Surat *</label>
+                        <input type="date" id="form-tanggal" required class="w-full border border-slate-300 rounded-xl p-2.5">
+                    </div>
+                </div>
+
+                <div id="field-pihak">
+                    <label id="label-pihak" class="block font-semibold text-slate-700 mb-1">Pengirim / Instansi Asal *</label>
+                    <input type="text" id="form-pihak" placeholder="Contoh: Suku Dinas Pendidikan Wilayah II" class="w-full border border-slate-300 rounded-xl p-2.5">
+                </div>
+
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Perihal / Judul Penetapan *</label>
+                    <textarea id="form-perihal" required rows="2" placeholder="Tuliskan ringkasan perihal surat..." class="w-full border border-slate-300 rounded-xl p-2.5"></textarea>
+                </div>
+
+                <!-- Field Upload File Surat ke Google Drive -->
+                <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl space-y-1.5">
+                    <label class="block font-bold text-slate-700 text-xs flex items-center">
+                        <i class="fa-solid fa-cloud-arrow-up text-brand-600 mr-1.5"></i> Upload File / Scan Surat (PDF, Gambar, Doc)
+                    </label>
+                    <input type="file" id="form-file-input" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx" class="w-full text-xs text-slate-500 file:mr-3 file:py-1.5 file:px-3 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-brand-50 file:text-brand-700 hover:file:bg-brand-100 transition cursor-pointer">
+                    <input type="hidden" id="form-file-url">
+                    <p class="text-[11px] text-slate-400">File akan otomatis tersimpan di Google Drive dan terhubung ke Google Sheets.</p>
+                </div>
+
+                <div id="field-disposisi" class="p-3 bg-blue-50 border border-blue-200 rounded-xl space-y-2">
+                    <label class="block font-semibold text-blue-900">Catatan Disposisi Awal (Opsional)</label>
+                    <input type="text" id="form-disposisi-text" placeholder="Contoh: Tindak lanjuti dan sosialisasikan ke guru kelas" class="w-full border border-blue-200 rounded-xl p-2 bg-white text-xs">
+                </div>
+
+                <div class="pt-2 flex justify-end space-x-2">
+                    <button type="button" onclick="closeModalAdd()" class="px-4 py-2 border border-slate-300 rounded-xl font-medium text-slate-600 hover:bg-slate-100">Batal</button>
+                    <button type="submit" id="btn-save-surat" class="px-4 py-2 bg-brand-600 text-white rounded-xl font-semibold hover:bg-brand-700 shadow flex items-center space-x-1">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        <span>Simpan ke Google Sheets</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL LEMBAR DISPOSISI PRINT -->
+    <div id="modal-disposisi" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-xl w-full overflow-hidden border border-slate-100">
+            <div class="bg-blue-900 text-white p-4 flex items-center justify-between no-print">
+                <h3 class="font-bold text-sm"><i class="fa-solid fa-file-lines mr-2"></i>Lembar Disposisi Kepala Sekolah</h3>
+                <div class="flex items-center space-x-2">
+                    <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-xs font-semibold">
+                        <i class="fa-solid fa-print mr-1"></i> Cetak
+                    </button>
+                    <button onclick="closeModalDisposisi()" class="text-slate-300 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+                </div>
+            </div>
+
+            <div class="p-6 text-xs text-black" id="disposisi-print-area">
+                <!-- Disposisi Official Header -->
+                <div class="border-b-2 border-black pb-2 text-center font-serif">
+                    <h4 class="font-bold uppercase text-xs" id="disposisi-header-sekolah">SDN CIPINANG MELAYU 03 PAGI</h4>
+                    <h3 class="font-bold uppercase text-sm underline">LEMBAR DISPOSISI KEPALA SEKOLAH</h3>
+                </div>
+
+                <div id="disposisi-content" class="mt-4 space-y-3 font-serif">
+                    <!-- Dynamic Injected Content -->
+                </div>
+
+                <div class="mt-6 border-t border-slate-300 pt-4 flex justify-between text-[11px] font-serif">
+                    <div>
+                        <p class="font-bold">Sifat Surat:</p>
+                        <p>[ ] Sangat Rahasia &nbsp; [ ] Penting &nbsp; [ ] Biasa</p>
+                    </div>
+                    <div class="text-center w-48">
+                        <p>Kepala Sekolah,</p>
+                        <div class="h-12"></div>
+                        <p class="font-bold underline" id="disposisi-signature-kepsek">Hj. SITI NURAENI, M.Pd</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 text-xs border border-slate-700">
+        <i id="toast-icon" class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+        <span id="toast-message">Pesan notifikasi</span>
+    </div>
+
+    <script>
+        // Default Settings State
+        let settings = {
+            loginLogoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png',
+            logo1Url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Coat_of_arms_of_Jakarta.svg/1200px-Coat_of_arms_of_Jakarta.svg.png',
+            logo2Url: 'https://upload.wikimedia.org/wikipedia/commons/9/9c/Logo_Tut_Wuri_Handayani.png',
+            instansiTop: 'PEMERINTAH PROVINSI DKI JAKARTA',
+            dinasName: 'DINAS PENDIDIKAN',
+            sudinName: 'SUKU DINAS PENDIDIKAN WILAYAH II JAKARTA TIMUR',
+            sekolahName: 'SDN CIPINANG MELAYU 03 PAGI',
+            alamatSekolah: 'Jl. Skuadron Komp. Halim Perdanakusuma, Cipinang Melayu, Kec. Makasar, Jakarta Timur',
+            kontakSekolah: 'Email: sdncm03pagi@jakarta.go.id | NPSN: 20104328 | Kodepos: 13620',
+            namaKepsek: 'Hj. SITI NURAENI, M.Pd',
+            nipKepsek: '197208151998032001',
+            namaOperator: 'AHMAD RIZAL, A.Md',
+            nipOperator: '198804122015031002'
+        };
+
+        // Archives Mock Fallback
+        let archives = [
+            {
+                id: '1',
+                kategori: 'Surat Masuk',
+                noSurat: '005/082.1/2026',
+                tanggal: '2026-03-18',
+                pihak: 'Dinas Pendidikan DKI Jakarta',
+                perihal: 'Undangan Rapat Koordinasi ANBK & Evaluasi Kurikulum Merdeka 2026',
+                disposisi: 'Tindak Lanjuti oleh Waka Kurikulum & Operator',
+                fileUrl: 'https://drive.google.com/file/d/demo_surat_masuk_1/view'
+            },
+            {
+                id: '2',
+                kategori: 'Surat Masuk',
+                noSurat: '112/Sudin-JT2/III/2026',
+                tanggal: '2026-03-15',
+                pihak: 'Sudin Pendidikan Wilayah II',
+                perihal: 'Pemberitahuan Inspeksi Pemeliharaan Sarana Prasarana Gedung Sekolah',
+                disposisi: 'Persiapkan berkas inventaris barang bersama Tim Sarpras',
+                fileUrl: ''
+            },
+            {
+                id: '3',
+                kategori: 'Surat Keluar',
+                noSurat: '421.2/012/SDNCM03/2026',
+                tanggal: '2026-03-20',
+                pihak: 'Puskesmas Cipinang Melayu',
+                perihal: 'Permohonan Pemeriksaan Kesehatan & Vaksinasi Berkala Siswa Kelas 1-3',
+                disposisi: '-',
+                fileUrl: ''
+            },
+            {
+                id: '4',
+                kategori: 'Surat Tugas',
+                noSurat: '800/025/SDNCM03/2026',
+                tanggal: '2026-03-22',
+                pihak: 'Budi Santoso, S.Pd (NIP. 198502112010011005)',
+                perihal: 'Pelatihan Pendampingan Digitalisasi Pembelajaran Kelas Awal se-Kecamatan Makasar',
+                disposisi: '-',
+                fileUrl: ''
+            },
+            {
+                id: '5',
+                kategori: 'SK Kepsek',
+                noSurat: '018/SK/SDNCM03/2026',
+                tanggal: '2026-01-05',
+                pihak: 'Internal Sekolah',
+                perihal: 'Penetapan Panitia Ujian Sekolah & Assesmen Nasional T.A 2026/2027',
+                disposisi: '-',
+                fileUrl: ''
+            }
+        ];
+
+        let myChart = null;
+
+        // LOADING OVERLAY CONTROLLERS
+        function showLoadingOverlay(msg = 'Memproses data...') {
+            document.getElementById('loading-text').innerText = msg;
+            document.getElementById('loading-overlay').classList.remove('hidden');
+            document.getElementById('loading-overlay').classList.add('flex');
+        }
+
+        function hideLoadingOverlay() {
+            document.getElementById('loading-overlay').classList.add('hidden');
+            document.getElementById('loading-overlay').classList.remove('flex');
+        }
+
+        // INITIALIZATION WITH PERSISTENT SESSION & CACHED SETTINGS
+        window.onload = function() {
+            const today = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('report-date-signature').innerText = 'Jakarta, ' + today.toLocaleDateString('id-ID', options);
+
+            // Load Cached Settings from LocalStorage immediately so Login Logo updates instantly
+            const cachedSettings = localStorage.getItem('earsip_settings');
+            if (cachedSettings) {
+                try {
+                    settings = Object.assign(settings, JSON.parse(cachedSettings));
+                } catch(e) {}
+            }
+            applySettingsToUI();
+
+            // Check Persistent Session (Stay Standby after refresh)
+            const isLoggedIn = localStorage.getItem('earsip_is_logged_in');
+            if (isLoggedIn === 'true') {
+                document.getElementById('login-modal').classList.add('hidden');
+                document.getElementById('main-app').classList.remove('hidden');
+            } else {
+                document.getElementById('login-modal').classList.remove('hidden');
+                document.getElementById('main-app').classList.add('hidden');
+            }
+
+            fetchLatestData();
+            initChart();
+        };
+
+        // FETCH DATA FROM GOOGLE SHEETS
+        function fetchLatestData() {
+            if (typeof google !== 'undefined' && google.script && google.script.run) {
+                google.script.run
+                    .withSuccessHandler(function(response) {
+                        if (response) {
+                            if (response.archives && response.archives.length > 0) {
+                                archives = response.archives;
+                            }
+                            if (response.settings && Object.keys(response.settings).length > 0) {
+                                settings = Object.assign(settings, response.settings);
+                                localStorage.setItem('earsip_settings', JSON.stringify(settings));
+                            }
+                            applySettingsToUI();
+                            updateBadgesAndStats();
+                            renderAllTables();
+                            renderRecentActivity();
+                            updateChartData();
+                        }
+                    })
+                    .withFailureHandler(function(err) {
+                        applySettingsToUI();
+                        updateBadgesAndStats();
+                        renderAllTables();
+                        renderRecentActivity();
+                    })
+                    .getAllData();
+            } else {
+                // Local Mode / Demo Mode
+                applySettingsToUI();
+                updateBadgesAndStats();
+                renderAllTables();
+                renderRecentActivity();
+            }
+        }
+
+        // APPLY SETTINGS TO KOP SURAT AND UI
+        function applySettingsToUI() {
+            // Save to LocalStorage for instant load on refresh
+            localStorage.setItem('earsip_settings', JSON.stringify(settings));
+
+            // Login & Sidebar
+            const logoLogin = settings.loginLogoUrl || settings.logo1Url;
+            document.getElementById('login-title-school').innerText = settings.sekolahName || 'SDN CIPINANG MELAYU 03 PAGI';
+            document.getElementById('login-logo-img').src = logoLogin;
+            document.getElementById('sidebar-school-title').innerText = settings.sekolahName || 'SDN CIPINANG MELAYU 03';
+            document.getElementById('dashboard-welcome-heading').innerText = 'Portal E-Arsip Surat ' + (settings.sekolahName || 'SDN Cipinang Melayu 03 Pagi');
+            
+            // User Display
+            document.getElementById('user-display-name').innerText = settings.namaOperator || 'AHMAD RIZAL, A.Md';
+            document.getElementById('user-display-nip').innerText = 'NIP. ' + (settings.nipOperator || '198804122015031002');
+
+            // Kop Surat Printable
+            document.getElementById('print-kop-logo1').src = settings.logo1Url;
+            document.getElementById('print-kop-logo2').src = settings.logo2Url;
+            document.getElementById('print-kop-instansi').innerText = settings.instansiTop;
+            document.getElementById('print-kop-dinas').innerText = settings.dinasName;
+            document.getElementById('print-kop-sudin').innerText = settings.sudinName;
+            document.getElementById('print-kop-sekolah').innerText = settings.sekolahName;
+            document.getElementById('print-kop-alamat').innerText = settings.alamatSekolah;
+            document.getElementById('print-kop-kontak').innerText = settings.kontakSekolah;
+
+            // Signature Printable
+            document.getElementById('print-signature-kepsek-nama').innerText = settings.namaKepsek;
+            document.getElementById('print-signature-kepsek-nip').innerText = 'NIP. ' + settings.nipKepsek;
+            document.getElementById('print-signature-operator-nama').innerText = settings.namaOperator;
+            document.getElementById('print-signature-operator-nip').innerText = 'NIP. ' + settings.nipOperator;
+
+            // Lembar Disposisi
+            document.getElementById('disposisi-header-sekolah').innerText = settings.sekolahName;
+            document.getElementById('disposisi-signature-kepsek').innerText = settings.namaKepsek;
+
+            // Populate Form Inputs in Tab Settings
+            if (document.getElementById('setting-loginLogoUrl')) {
+                document.getElementById('setting-loginLogoUrl').value = settings.loginLogoUrl || '';
+            }
+            document.getElementById('setting-logo1Url').value = settings.logo1Url;
+            document.getElementById('setting-logo2Url').value = settings.logo2Url;
+            document.getElementById('setting-instansiTop').value = settings.instansiTop;
+            document.getElementById('setting-dinasName').value = settings.dinasName;
+            document.getElementById('setting-sudinName').value = settings.sudinName;
+            document.getElementById('setting-sekolahName').value = settings.sekolahName;
+            document.getElementById('setting-alamatSekolah').value = settings.alamatSekolah;
+            document.getElementById('setting-kontakSekolah').value = settings.kontakSekolah;
+            document.getElementById('setting-namaKepsek').value = settings.namaKepsek;
+            document.getElementById('setting-nipKepsek').value = settings.nipKepsek;
+            document.getElementById('setting-namaOperator').value = settings.namaOperator;
+            document.getElementById('setting-nipOperator').value = settings.nipOperator;
+        }
+
+        function updateSettingsPreview() {
+            if (document.getElementById('setting-loginLogoUrl')) {
+                settings.loginLogoUrl = document.getElementById('setting-loginLogoUrl').value;
+            }
+            settings.logo1Url = document.getElementById('setting-logo1Url').value;
+            settings.logo2Url = document.getElementById('setting-logo2Url').value;
+            settings.instansiTop = document.getElementById('setting-instansiTop').value;
+            settings.dinasName = document.getElementById('setting-dinasName').value;
+            settings.sudinName = document.getElementById('setting-sudinName').value;
+            settings.sekolahName = document.getElementById('setting-sekolahName').value;
+            settings.alamatSekolah = document.getElementById('setting-alamatSekolah').value;
+            settings.kontakSekolah = document.getElementById('setting-kontakSekolah').value;
+            settings.namaKepsek = document.getElementById('setting-namaKepsek').value;
+            settings.nipKepsek = document.getElementById('setting-nipKepsek').value;
+            settings.namaOperator = document.getElementById('setting-namaOperator').value;
+            settings.nipOperator = document.getElementById('setting-nipOperator').value;
+            
+            applySettingsToUI();
+        }
+
+        function uploadLogoToDrive(event, targetInputId) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            showLoadingOverlay('Mengunggah logo ke Google Drive & Menyimpan ke Spreadsheet...');
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const base64 = e.target.result;
+                const fileObj = {
+                    base64: base64,
+                    fileName: `Logo_${targetInputId}_${Date.now()}.${file.name.split('.').pop()}`,
+                    mimeType: file.type,
+                    folderName: "E-Arsip SDN Cipinang Melayu 03 Pagi - Logo"
+                };
+
+                if (typeof google !== 'undefined' && google.script && google.script.run) {
+                    google.script.run
+                        .withSuccessHandler(function(res) {
+                            hideLoadingOverlay();
+                            if (res && res.fileUrl) {
+                                document.getElementById(targetInputId).value = res.fileUrl;
+                                updateSettingsPreview();
+                                // Automatically save settings to Google Sheets
+                                google.script.run.saveSettingsData(settings);
+                                showToast('Logo berhasil diunggah dan tersimpan!', 'success');
+                            } else {
+                                showToast('Gagal mendapatkan link logo Drive', 'error');
+                            }
+                        })
+                        .withFailureHandler(function(err) {
+                            hideLoadingOverlay();
+                            showToast('Gagal mengunggah logo ke Drive', 'error');
+                        })
+                        .uploadFileToDrive(fileObj);
+                } else {
+                    hideLoadingOverlay();
+                    document.getElementById(targetInputId).value = base64;
+                    updateSettingsPreview();
+                    showToast('Logo dimuat secara lokal (Demo Mode)', 'success');
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function saveSettingsForm(e) {
+            e.preventDefault();
+            updateSettingsPreview();
+            showLoadingOverlay('Menyimpan Pengaturan Kop Surat & Logo...');
+
+            if (typeof google !== 'undefined' && google.script && google.script.run) {
+                google.script.run
+                    .withSuccessHandler(function(res) {
+                        hideLoadingOverlay();
+                        showToast('Pengaturan Kop & Logo berhasil tersimpan di Google Sheets!', 'success');
+                    })
+                    .withFailureHandler(function(err) {
+                        hideLoadingOverlay();
+                        showToast('Gagal menyimpan ke Google Sheets', 'error');
+                    })
+                    .saveSettingsData(settings);
+            } else {
+                hideLoadingOverlay();
+                showToast('Pengaturan disimpan secara lokal (Demo Mode)', 'success');
+            }
+        }
+
+        // AUTHENTICATION LOGIC WITH LOADING & PERSISTENT SESSION
+        function handleLogin(e) {
+            e.preventDefault();
+            const u = document.getElementById('username').value;
+            const p = document.getElementById('password').value;
+
+            showLoadingOverlay('Memverifikasi Akun & Memuat Dashboard...');
+
+            setTimeout(() => {
+                hideLoadingOverlay();
+                if (u === 'operator' && p === 'admin123') {
+                    // Set Persistent Session Flag
+                    localStorage.setItem('earsip_is_logged_in', 'true');
+
+                    document.getElementById('login-modal').classList.add('hidden');
+                    document.getElementById('main-app').classList.remove('hidden');
+                    showToast('Selamat datang, ' + settings.namaOperator, 'success');
+                } else {
+                    document.getElementById('login-error').classList.remove('hidden');
+                }
+            }, 600);
+        }
+
+        function handleLogout() {
+            showLoadingOverlay('Keluar dari Sistem E-Arsip...');
+
+            setTimeout(() => {
+                hideLoadingOverlay();
+                // Clear Persistent Session Flag
+                localStorage.setItem('earsip_is_logged_in', 'false');
+
+                document.getElementById('main-app').classList.add('hidden');
+                document.getElementById('login-modal').classList.remove('hidden');
+                document.getElementById('login-error').classList.add('hidden');
+                showToast('Anda telah keluar dari sistem', 'info');
+            }, 500);
+        }
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.nav-btn').forEach(el => {
+                el.classList.remove('bg-slate-800', 'text-white');
+                el.classList.add('text-slate-300');
+            });
+
+            const targetTab = document.getElementById('tab-' + tabId);
+            if (targetTab) targetTab.classList.remove('hidden');
+
+            const navBtn = document.getElementById('nav-' + tabId);
+            if (navBtn) {
+                navBtn.classList.add('bg-slate-800', 'text-white');
+                navBtn.classList.remove('text-slate-300');
+            }
+
+            const titleMap = {
+                'dashboard': 'Dashboard Utama',
+                'surat-masuk': 'Arsip Surat Masuk',
+                'surat-keluar': 'Arsip Surat Keluar',
+                'surat-tugas': 'Arsip Surat Tugas Guru & Tendik',
+                'sk-kepsek': 'Arsip SK Kepala Sekolah',
+                'laporan': 'Laporan & Cetak PDF Real-Time',
+                'pengaturan': 'Pengaturan Kop Surat & Logo Sekolah'
+            };
+            document.getElementById('page-title').innerText = titleMap[tabId] || 'E-Arsip Sekolah';
+        }
+
+        function showToast(msg, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            const toastIcon = document.getElementById('toast-icon');
+
+            toastMsg.innerText = msg;
+            if (type === 'error') {
+                toastIcon.className = 'fa-solid fa-circle-xmark text-red-400 text-base';
+            } else if (type === 'info') {
+                toastIcon.className = 'fa-solid fa-circle-info text-sky-400 text-base';
+            } else {
+                toastIcon.className = 'fa-solid fa-circle-check text-emerald-400 text-base';
+            }
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3200);
+        }
+
+        function updateBadgesAndStats() {
+            const countMasuk = archives.filter(a => a.kategori === 'Surat Masuk').length;
+            const countKeluar = archives.filter(a => a.kategori === 'Surat Keluar').length;
+            const countTugas = archives.filter(a => a.kategori === 'Surat Tugas').length;
+            const countSK = archives.filter(a => a.kategori === 'SK Kepsek').length;
+
+            document.getElementById('badge-masuk').innerText = countMasuk;
+            document.getElementById('badge-keluar').innerText = countKeluar;
+            document.getElementById('badge-tugas').innerText = countTugas;
+            document.getElementById('badge-sk').innerText = countSK;
+
+            document.getElementById('stat-masuk').innerText = countMasuk;
+            document.getElementById('stat-keluar').innerText = countKeluar;
+            document.getElementById('stat-tugas').innerText = countTugas;
+            document.getElementById('stat-sk').innerText = countSK;
+        }
+
+        function renderAllTables() {
+            renderTable('masuk');
+            renderTable('keluar');
+            renderTable('tugas');
+            renderTable('sk');
+            renderReportPreview();
+        }
+
+        function formatDateIndo(dateStr) {
+            if (!dateStr) return '-';
+            const parts = dateStr.split('-');
+            if (parts.length === 3) {
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+                const mIdx = parseInt(parts[1], 10) - 1;
+                return `${parts[2]} ${months[mIdx] || parts[1]} ${parts[0]}`;
+            }
+            return dateStr;
+        }
+
+        function renderTable(type) {
+            let categoryName = '';
+            let tbodyId = '';
+            let searchInputId = '';
+
+            if (type === 'masuk') { categoryName = 'Surat Masuk'; tbodyId = 'tbody-masuk'; searchInputId = 'search-masuk'; }
+            else if (type === 'keluar') { categoryName = 'Surat Keluar'; tbodyId = 'tbody-keluar'; searchInputId = 'search-keluar'; }
+            else if (type === 'tugas') { categoryName = 'Surat Tugas'; tbodyId = 'tbody-tugas'; searchInputId = 'search-tugas'; }
+            else if (type === 'sk') { categoryName = 'SK Kepsek'; tbodyId = 'tbody-sk'; searchInputId = 'search-sk'; }
+
+            const tbody = document.getElementById(tbodyId);
+            if (!tbody) return;
+
+            const query = (document.getElementById(searchInputId)?.value || '').toLowerCase();
+            const filtered = archives.filter(item => {
+                if (item.kategori !== categoryName) return false;
+                if (!query) return true;
+                return (item.noSurat || '').toLowerCase().includes(query) ||
+                       (item.pihak || '').toLowerCase().includes(query) ||
+                       (item.perihal || '').toLowerCase().includes(query);
+            });
+
+            if (filtered.length === 0) {
+                const colSpan = type === 'masuk' ? 7 : (type === 'keluar' ? 6 : 5);
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="${colSpan}" class="p-8 text-center text-slate-400">
+                            <i class="fa-solid fa-folder-open text-3xl mb-2 text-slate-300"></i>
+                            <p>Belum ada data ${categoryName}</p>
+                        </td>
+                    </tr>`;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map((item) => {
+                const driveBtn = item.fileUrl ? `
+                    <a href="${item.fileUrl}" target="_blank" class="inline-flex items-center space-x-1 px-2.5 py-1 bg-brand-50 text-brand-700 hover:bg-brand-100 rounded-lg text-[11px] font-semibold transition" title="Buka File di Google Drive">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        <span>Drive</span>
+                    </a>` : `<span class="text-slate-300 text-[11px] italic">Tanpa File</span>`;
+
+                if (type === 'masuk') {
+                    return `
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="p-3 font-semibold text-slate-500">#${item.id}</td>
+                        <td class="p-3 font-medium text-slate-900">
+                            <div>${item.noSurat}</div>
+                            <div class="text-[11px] text-slate-400">${formatDateIndo(item.tanggal)}</div>
+                        </td>
+                        <td class="p-3 font-medium text-slate-700">${item.pihak}</td>
+                        <td class="p-3 text-slate-600 max-w-xs truncate">${item.perihal}</td>
+                        <td class="p-3 text-slate-500">${formatDateIndo(item.tanggal)}</td>
+                        <td class="p-3 text-center">
+                            <button onclick="openModalDisposisi('${item.id}')" class="px-2.5 py-1 bg-amber-50 text-amber-700 hover:bg-amber-100 rounded-lg font-semibold text-[11px] transition">
+                                <i class="fa-solid fa-file-signature mr-1"></i> Disposisi
+                            </button>
+                        </td>
+                        <td class="p-3 text-center space-x-1">
+                            ${driveBtn}
+                            <button onclick="editSurat('${item.id}')" title="Edit Surat" class="p-1.5 text-slate-400 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button onclick="deleteSurat('${item.id}', '${item.kategori}')" title="Hapus Surat" class="p-1.5 text-slate-400 hover:text-red-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>`;
+                } else if (type === 'keluar') {
+                    return `
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="p-3 font-medium text-slate-900">${item.noSurat}</td>
+                        <td class="p-3 text-slate-600">${formatDateIndo(item.tanggal)}</td>
+                        <td class="p-3 font-medium text-slate-700">${item.pihak}</td>
+                        <td class="p-3 text-slate-600 max-w-xs truncate">${item.perihal}</td>
+                        <td class="p-3 text-slate-500">${settings.namaOperator || 'Operator'}</td>
+                        <td class="p-3 text-center space-x-1">
+                            ${driveBtn}
+                            <button onclick="editSurat('${item.id}')" title="Edit Surat" class="p-1.5 text-slate-400 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button onclick="deleteSurat('${item.id}', '${item.kategori}')" title="Hapus Surat" class="p-1.5 text-slate-400 hover:text-red-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>`;
+                } else if (type === 'tugas') {
+                    return `
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="p-3 font-medium text-slate-900">${item.noSurat}</td>
+                        <td class="p-3 font-semibold text-slate-800">${item.pihak}</td>
+                        <td class="p-3 text-slate-600 max-w-xs truncate">${item.perihal}</td>
+                        <td class="p-3 text-slate-500">${formatDateIndo(item.tanggal)}</td>
+                        <td class="p-3 text-center space-x-1">
+                            ${driveBtn}
+                            <button onclick="editSurat('${item.id}')" title="Edit Surat" class="p-1.5 text-slate-400 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button onclick="deleteSurat('${item.id}', '${item.kategori}')" title="Hapus Surat" class="p-1.5 text-slate-400 hover:text-red-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>`;
+                } else {
+                    return `
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="p-3 font-medium text-slate-900">${item.noSurat}</td>
+                        <td class="p-3 font-semibold text-slate-800 max-w-xs truncate">${item.perihal}</td>
+                        <td class="p-3 text-slate-600">${formatDateIndo(item.tanggal)}</td>
+                        <td class="p-3"><span class="px-2 py-0.5 bg-emerald-50 text-emerald-700 text-[11px] font-semibold rounded-full border border-emerald-200">Aktif</span></td>
+                        <td class="p-3 text-center space-x-1">
+                            ${driveBtn}
+                            <button onclick="editSurat('${item.id}')" title="Edit Surat" class="p-1.5 text-slate-400 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                            <button onclick="deleteSurat('${item.id}', '${item.kategori}')" title="Hapus Surat" class="p-1.5 text-slate-400 hover:text-red-600 rounded-lg hover:bg-slate-100 transition">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>`;
+                }
+            }).join('');
+        }
+
+        function renderRecentActivity() {
+            const container = document.getElementById('recent-activities');
+            if (!container) return;
+
+            if (archives.length === 0) {
+                container.innerHTML = '<p class="text-slate-400 italic">Belum ada aktivitas arsip.</p>';
+                return;
+            }
+
+            const recents = archives.slice(0, 4);
+            const badgeColors = {
+                'Surat Masuk': 'bg-blue-100 text-blue-700',
+                'Surat Keluar': 'bg-emerald-100 text-emerald-700',
+                'Surat Tugas': 'bg-amber-100 text-amber-700',
+                'SK Kepsek': 'bg-purple-100 text-purple-700'
+            };
+
+            container.innerHTML = recents.map(item => `
+                <div class="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-3">
+                    <span class="px-2 py-0.5 text-[10px] font-bold rounded-lg ${badgeColors[item.kategori] || 'bg-slate-200 text-slate-700'}">
+                        ${item.kategori}
+                    </span>
+                    <div class="min-w-0 flex-1">
+                        <p class="font-semibold text-slate-800 text-xs truncate">${item.perihal}</p>
+                        <p class="text-[11px] text-slate-400">${item.noSurat} • ${formatDateIndo(item.tanggal)}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function initChart() {
+            const ctx = document.getElementById('chartSurat');
+            if (!ctx) return;
+
+            myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Surat Masuk', 'Surat Keluar', 'Surat Tugas', 'SK Kepsek'],
+                    datasets: [{
+                        label: 'Jumlah Arsip Surat',
+                        data: [0, 0, 0, 0],
+                        backgroundColor: [
+                            'rgba(2, 132, 199, 0.85)',
+                            'rgba(16, 185, 129, 0.85)',
+                            'rgba(245, 158, 11, 0.85)',
+                            'rgba(168, 85, 247, 0.85)'
+                        ],
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, ticks: { precision: 0 } }
+                    }
+                }
+            });
+
+            updateChartData();
+        }
+
+        function updateChartData() {
+            if (!myChart) return;
+            const countMasuk = archives.filter(a => a.kategori === 'Surat Masuk').length;
+            const countKeluar = archives.filter(a => a.kategori === 'Surat Keluar').length;
+            const countTugas = archives.filter(a => a.kategori === 'Surat Tugas').length;
+            const countSK = archives.filter(a => a.kategori === 'SK Kepsek').length;
+
+            myChart.data.datasets[0].data = [countMasuk, countKeluar, countTugas, countSK];
+            myChart.update();
+        }
+
+        function toggleFormFields() {
+            const category = document.getElementById('form-kategori').value;
+            const labelPihak = document.getElementById('label-pihak');
+            const fieldDisposisi = document.getElementById('field-disposisi');
+
+            if (category === 'Surat Masuk') {
+                labelPihak.innerText = 'Pengirim / Instansi Asal *';
+                fieldDisposisi.classList.remove('hidden');
+            } else if (category === 'Surat Keluar') {
+                labelPihak.innerText = 'Tujuan Surat / Penerima *';
+                fieldDisposisi.classList.add('hidden');
+            } else if (category === 'Surat Tugas') {
+                labelPihak.innerText = 'Nama Guru / Pegawai Ditugaskan *';
+                fieldDisposisi.classList.add('hidden');
+            } else {
+                labelPihak.innerText = 'Unit / Sasaran Penetapan SK *';
+                fieldDisposisi.classList.add('hidden');
+            }
+        }
+
+        function closeModalAdd() {
+            document.getElementById('modal-add').classList.add('hidden');
+        }
+
+        function editSurat(id) {
+            const item = archives.find(a => a.id === id);
+            if (!item) return;
+
+            document.getElementById('form-id').value = item.id;
+            document.getElementById('form-kategori').value = item.kategori;
+            document.getElementById('form-nosurat').value = item.noSurat;
+            document.getElementById('form-tanggal').value = item.tanggal;
+            document.getElementById('form-pihak').value = item.pihak;
+            document.getElementById('form-perihal').value = item.perihal;
+            document.getElementById('form-file-url').value = item.fileUrl || '';
+            if (document.getElementById('form-disposisi-text')) {
+                document.getElementById('form-disposisi-text').value = item.disposisi !== '-' ? item.disposisi : '';
+            }
+
+            toggleFormFields();
+            document.getElementById('modal-add').classList.remove('hidden');
+        }
+
+        function deleteSurat(id, category) {
+            showLoadingOverlay('MENGHAPUS ARSIP SURAT...');
+            
+            if (typeof google !== 'undefined' && google.script && google.script.run) {
+                google.script.run
+                    .withSuccessHandler(function() {
+                        hideLoadingOverlay();
+                        archives = archives.filter(a => a.id !== id);
+                        updateBadgesAndStats();
+                        renderAllTables();
+                        renderRecentActivity();
+                        updateChartData();
+                        showToast('Surat telah berhasil dihapus', 'info');
+                    })
+                    .withFailureHandler(function() {
+                        hideLoadingOverlay();
+                        showToast('Gagal menghapus data di Google Sheets', 'error');
+                    })
+                    .deleteSuratData(id, category);
+            } else {
+                hideLoadingOverlay();
+                archives = archives.filter(a => a.id !== id);
+                updateBadgesAndStats();
+                renderAllTables();
+                renderRecentActivity();
+                updateChartData();
+                showToast('Surat dihapus (Demo Mode)', 'info');
+            }
+        }
+
+        function openModalDisposisi(id) {
+            const item = archives.find(a => a.id === id);
+            if (!item) return;
+
+            const content = document.getElementById('disposisi-content');
+            content.innerHTML = `
+                <table class="w-full text-xs border border-black border-collapse">
+                    <tr>
+                        <td class="p-2 border border-black font-bold bg-slate-50 w-1/4">Surat Dari</td>
+                        <td class="p-2 border border-black">${item.pihak}</td>
+                        <td class="p-2 border border-black font-bold bg-slate-50 w-1/4">Tgl. Diterima</td>
+                        <td class="p-2 border border-black">${formatDateIndo(item.tanggal)}</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 border border-black font-bold bg-slate-50">No. Surat</td>
+                        <td class="p-2 border border-black">${item.noSurat}</td>
+                        <td class="p-2 border border-black font-bold bg-slate-50">Tgl. Surat</td>
+                        <td class="p-2 border border-black">${formatDateIndo(item.tanggal)}</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 border border-black font-bold bg-slate-50">Hal / Perihal</td>
+                        <td colspan="3" class="p-2 border border-black font-medium">${item.perihal}</td>
+                    </tr>
+                </table>
+                
+                <div class="border border-black p-3 rounded mt-3">
+                    <p class="font-bold underline mb-1">DISPOSISI / PETUNJUK KEPALA SEKOLAH:</p>
+                    <p class="text-sm italic">${item.disposisi && item.disposisi !== '-' ? item.disposisi : 'Tindak Lanjuti Sesuai Ketentuan & Arsipkan.'}</p>
+                </div>
+            `;
+
+            document.getElementById('modal-disposisi').classList.remove('hidden');
+        }
+
+        function closeModalDisposisi() {
+            document.getElementById('modal-disposisi').classList.add('hidden');
+        }
+
+        function handleGlobalSearch(e) {
+            const q = e.target.value.toLowerCase();
+            if (!q) return;
+
+            if (e.key === 'Enter') {
+                switchTab('surat-masuk');
+                document.getElementById('search-masuk').value = q;
+                renderTable('masuk');
+            }
+        }
+
+        function renderReportPreview() {
+            const cat = document.getElementById('report-category')?.value || 'ALL';
+            const month = document.getElementById('report-month')?.value || 'ALL';
+            const sort = document.getElementById('report-sort')?.value || 'DATE_DESC';
+
+            let filtered = archives.filter(item => {
+                if (cat !== 'ALL' && item.kategori !== cat) return false;
+                if (month !== 'ALL') {
+                    const m = item.tanggal ? item.tanggal.split('-')[1] : '';
+                    if (m !== month) return false;
+                }
+                return true;
+            });
+
+            filtered.sort((a, b) => {
+                if (sort === 'DATE_ASC') return new Date(a.tanggal) - new Date(b.tanggal);
+                return new Date(b.tanggal) - new Date(a.tanggal);
+            });
+
+            const reportHeaderTitle = document.getElementById('report-title-header');
+            if (reportHeaderTitle) {
+                reportHeaderTitle.innerText = cat === 'ALL' ? 'REKAPITULASI SELURUH ARSIP SURAT' : `REKAPITULASI ARSIP ${cat.toUpperCase()}`;
+            }
+
+            const tbody = document.getElementById('report-table-body');
+            if (!tbody) return;
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="6" class="border border-black p-4 text-center italic text-slate-500">
+                            Tidak ada data arsip surat yang sesuai dengan filter.
+                        </td>
+                    </tr>`;
+                return;
+            }
+
+            tbody.innerHTML = filtered.map((item, i) => `
+                <tr>
+                    <td class="border border-black p-2 text-center">${i + 1}</td>
+                    <td class="border border-black p-2 font-bold">${item.kategori}</td>
+                    <td class="border border-black p-2 font-mono">${item.noSurat}</td>
+                    <td class="border border-black p-2">${formatDateIndo(item.tanggal)}</td>
+                    <td class="border border-black p-2">${item.pihak}</td>
+                    <td class="border border-black p-2">${item.perihal}</td>
+                </tr>
+            `).join('');
+        }
+
+        function generateReportPDF() {
+            const element = document.getElementById('printable-area');
+            if (!element) return;
+
+            showLoadingOverlay('Mencetak & Menyiapkan Dokumen PDF...');
+
+            const opt = {
+                margin:       [0.4, 0.4, 0.4, 0.4],
+                filename:     `Laporan_Arsip_SDNCM03_${Date.now()}.pdf`,
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                hideLoadingOverlay();
+                showToast('Laporan PDF berhasil diunduh!', 'success');
+            }).catch(err => {
+                hideLoadingOverlay();
+                showToast('Gagal membuat PDF, silakan gunakan tombol Cetak Langsung', 'error');
+            });
+        }
+
+        // CRUD & SAVE TO GOOGLE SHEETS & DRIVE
+        function openModalAdd(defaultCategory = 'Surat Masuk') {
+            document.getElementById('form-surat').reset();
+            document.getElementById('form-id').value = '';
+            document.getElementById('form-file-url').value = '';
+            document.getElementById('form-file-input').value = '';
+            document.getElementById('form-kategori').value = defaultCategory;
+            toggleFormFields();
+            document.getElementById('modal-add').classList.remove('hidden');
+        }
+
+        function handleSaveSurat(e) {
+            e.preventDefault();
+            const id = document.getElementById('form-id').value || Date.now().toString();
+            const kategori = document.getElementById('form-kategori').value;
+            const noSurat = document.getElementById('form-nosurat').value;
+            const tanggal = document.getElementById('form-tanggal').value;
+            const pihak = document.getElementById('form-pihak').value;
+            const perihal = document.getElementById('form-perihal').value;
+            const disposisi = document.getElementById('form-disposisi-text').value || '-';
+            const fileInput = document.getElementById('form-file-input');
+
+            showLoadingOverlay('Mengunggah berkas ke Google Drive & Menyimpan ke Spreadsheet...');
+
+            const saveProcess = function(fileUrl = '') {
+                const newItem = { id, kategori, noSurat, tanggal, pihak, perihal, disposisi, fileUrl };
+
+                if (typeof google !== 'undefined' && google.script && google.script.run) {
+                    google.script.run
+                        .withSuccessHandler(function(res) {
+                            hideLoadingOverlay();
+                            const existingIdx = archives.findIndex(a => a.id === id);
+                            if (existingIdx >= 0) archives[existingIdx] = newItem;
+                            else archives.unshift(newItem);
+
+                            updateBadgesAndStats();
+                            renderAllTables();
+                            renderRecentActivity();
+                            updateChartData();
+                            closeModalAdd();
+                            showToast('Surat & Berkas berhasil tersimpan di Google Sheets & Drive!', 'success');
+                        })
+                        .withFailureHandler(function(err) {
+                            hideLoadingOverlay();
+                            showToast('Gagal menyimpan ke Google Sheets', 'error');
+                        })
+                        .saveSuratData(newItem);
+                } else {
+                    hideLoadingOverlay();
+                    // Demo Mode / Fallback Google Drive Link Simulation if not connected to GAS
+                    const mockDriveUrl = fileUrl || `https://drive.google.com/file/d/demo_drive_${Date.now()}/view`;
+                    newItem.fileUrl = mockDriveUrl;
+                    
+                    archives.unshift(newItem);
+                    updateBadgesAndStats();
+                    renderAllTables();
+                    renderRecentActivity();
+                    updateChartData();
+                    closeModalAdd();
+                    showToast('Surat tersimpan secara lokal (Link Drive Ter-generate)', 'success');
+                }
+            };
+
+            // Jika ada file terlampir, unggah ke Google Drive secara otomatis
+            if (fileInput && fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    const base64 = evt.target.result;
+                    const fileObj = {
+                        base64: base64,
+                        fileName: `${kategori.replace(/\s+/g,'_')}_${noSurat.replace(/[\/\\?%*:|"<>]/g, '_')}_${file.name}`,
+                        mimeType: file.type,
+                        folderName: "E-Arsip SDN Cipinang Melayu 03 Pagi - File Surat"
+                    };
+
+                    if (typeof google !== 'undefined' && google.script && google.script.run) {
+                        google.script.run
+                            .withSuccessHandler(function(res) {
+                                if (res && res.fileUrl) {
+                                    saveProcess(res.fileUrl);
+                                } else {
+                                    saveProcess('');
+                                }
+                            })
+                            .withFailureHandler(function(err) {
+                                showToast('Gagal upload berkas ke Drive, menyimpan tanpa file', 'error');
+                                saveProcess('');
+                            })
+                            .uploadFileToDrive(fileObj);
+                    } else {
+                        saveProcess('');
+                    }
+                };
+                reader.readAsDataURL(file);
+            } else {
+                saveProcess(document.getElementById('form-file-url').value || '');
+            }
+        }
+    </script>
 </body>
 </html>
